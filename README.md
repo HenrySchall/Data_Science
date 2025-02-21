@@ -108,6 +108,44 @@ Uma outra forma do problema de endogeneidade é a causalidade
  da lei sobre o nível de criminalidade usando uma amostra de corte
  transversal estará assim sujeito ao viés de endogeneidade
 
+Se considerarmos uma equação
+ onde um ou mais variáveis explanatórias são determinadas
+ conjuntamente com a variável do lado esquerdo (a variável
+ independente), o estimador de MQO proverá estimativas
+ inconsistentes para os parâmetros comportamentais.
+
+
+Variáveis instrumentais
+
+ De forma a contornar o problema da endogeneidade, podemos
+ deixar a variável não observada no termo de erro, mas ao
+ invés de estimar o modelo por MQO, nós fazemos uso de um
+ método de estimação que reconhece a presença da variável
+ omitida. É basicamente isso que o método de variáveis
+ instrumentais faz. Variáveis instrumentais são, a propósito, uma
+ poderosa ferramenta para identificar e estimar relações causais
+
+
+  Para ilustrar, considere o modelo simples de regressão linear abaixo
+ especificado
+ y =β0+β1x +u
+
+ O estimador de MQO para o parâmetro de inclinação é dado por
+ ˆ
+ βMQO = Cov(x,y) / Var(x)
+
+ Se supormos, por suposto, que o regressor x é correlacionado com o
+ termo de erro u, esse estimador será viesado e inconsistente.
+
+  Se tivermos um instrumento válido z, nós podemos estimar β1 de
+ forma consistente usando o estimador de variáveis instrumentais
+ ˆ
+ βIV =Cov(z,y) / Cov(z,x)
+
+ Isto é, um instrumento válido é correlacionado com o regressor
+ x, o que implica que o denominador de 11 é diferente de zero.
+ Ele também deve ser não correlacionado como o termo de
+ erro u.
 
 Método de Momentos Generalizados (MMG)
 
