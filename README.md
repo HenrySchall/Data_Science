@@ -50,7 +50,63 @@ yt = β1 +β2yt−1 +β3yt−2 +εt
  possível fazer inferência de modo apropriado, utilizando a estimativa
  de Newey-West para a matriz de covariância
 
+
+  Observe, ademais, que mesmo que consideremos a hipótese de que
+ E {εtxt} = 0, isto é, que os termos de erro e as variáveis
+ explanatórias não são contemporaneamente correlacionadas, haverá
+ casos em que isso não será necessariamente válido. Para esses, não
+ mais poderemos dizer que o estimador de MQO será não viesado e
+ consistente. Exemplos desses casos são: presença de variáveis
+ dependentes defasadas e correlacionadas com o termo de erro, erros
+ de medida e simultaneidade ou endogeneidade dos regressores.
+ Vamos tratar a seguir do último e mais interessante caso
+
 também conhecidos como Two-Stage Least Squares (2SLS), são uma técnica utilizada em econometria para estimar modelos de regressão quando há endogeneidade nas variáveis explicativas. A endogeneidade pode ocorrer quando uma variável independente está correlacionada com o erro do modelo, o que pode levar a estimativas viesadas e inconsistentes.
+
+
+Viés = O problema de viés gerado por variável omitida aparece se uma
+ variável explanatória relevante, correlacionada com os regressores
+ incluídos, é omitida do modelo  Esse viés é particularmente preocupante
+ quando estamos interessados em fazer uma interpretação
+ causal dos nossos coeficientes estimados
+
+ yi = x1iβ1 + x2iβ2 + uiγ +vi
+
+ onde, yi é o salário em log de um determinado indivíduo, x1i é um
+ vetor de características individuais, incluindo o intercepto e x2i
+ denota anos de escolaridade. Ademais, ui é uma variável não
+ observado que reflete a habilidade de um determinado indivíduo.
+ Pessoas com níveis elevados de habilidade tendem a possuir salários
+ mais altos (γ > 0), mas também mais prováveis de terem maior
+ escolaridade.
+
+  Assim, podemos esperar que cov {x2i,ui} > 0. Dado que ui é não
+ observado, o econometrista irá estimar
+
+
+yi = x′iβ +εi,
+
+ Assumindo E {xiei} = 0, isso nos permite mostrar que o limite de
+ probabilidade para b é dado por
+
+habilidade não obseervacvel  a habilidade não observada deveria
+ ser não correlacionada com a escolaridade e as demais
+ variáveis do modelo
+
+Causalidade inversa
+Uma outra forma do problema de endogeneidade é a causalidade
+ reversa
+
+
+ Isto é, não apenas xi possui impacto sobre yi, como ao
+ mesmo tempo yi tem impacto sobre um ou mais elementos de xi,
+ como x2i. Por exemplo, o nível de criminalidade em uma
+ determinada cidade será afetada pelo quantidade de dinheiro gasto
+ no cumprimento da lei, enquanto funcionários públicos podem
+ decidir aumentar o orçamento da segurança em função do nível
+ esperado de criminalidade. Estimar o impacto causal da aplicação
+ da lei sobre o nível de criminalidade usando uma amostra de corte
+ transversal estará assim sujeito ao viés de endogeneidade
 
 
 Método de Momentos Generalizados (MMG)
