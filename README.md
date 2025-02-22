@@ -1,7 +1,6 @@
 # Data Science
 
-![1000155226](https://github.com/user-attachments/assets/6d755ab5-83d8-49ab-868e-2e918b1da18b)
-
+![IMG_23112](https://github.com/user-attachments/assets/13ebbab0-76d3-482a-a0cb-2fdc55abed9f)
 
 ### Mínimos Quadrados em 2 Estágios
 
