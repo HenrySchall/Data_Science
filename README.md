@@ -146,7 +146,43 @@ Variáveis instrumentais
  Ele também deve ser não correlacionado como o termo de
  erro u.
 
-Método de Momentos Generalizados (MMG)
+Método de Momentos Generalizados (GMM)
+
+introducao - chtgpt
+
+ Diversos métodos tais como mínimos quadrados, máxima
+ verossimilhança ou variáveis instrumentais podem ser vistos como
+ baseados em algumas condições de momento, o que faz deles um
+ caso especial do GMM.
+
+  Como expõe Bueno [2011], O Método dos Momentos
+ Generalizado (GMM) minimiza uma função representando as
+ condições de momento devidamente ponderadas. Se essas condições
+ de momentos estiverem corretas, terão média 0. Isso conduz a um
+ teste de superidentificação usando o valor minimizado da função.
+ Trata-se do teste j, definido como
+
+ J =TgT(w,θ)sⁿ-1gT(w,θ) ∼ χ2m−k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
