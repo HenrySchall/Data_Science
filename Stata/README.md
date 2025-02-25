@@ -21,17 +21,17 @@ Quantitative (numerical attributes).
 ### Basic Commands
 
 - Creating working directory
-```stata
+```
 cd "C:\Stata"
 ```
 
 - Open settings
-```stata
+```
 set
 ```
 
 - Sets comma as decimal separator
-```stata
+```
 set dp comma
 ```
 
