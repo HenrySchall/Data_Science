@@ -185,23 +185,28 @@ drop if ==X
 keep
 ```
 
+-  manter a variável com modificações
 ```stata
-keep
+keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
 ```
 
-// manter a variável com modificações
-keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
-
-// renomear variáveis de interesse
+- renomear variáveis de interesse
+```stata
 rename x y
+```
 
-// mudar descrição da variável
+- mudar descrição da variável
+```stata
 label variable ano "V0101-ANO DE REFERÊNCIA"
+```
 
-// alterando rótulos das dados das variáveis
+- alterando rótulos das dados das variáveis
+```stata
 label define x 1 "y" 2 "w", replace //especificando mudancas //
-label values x x //aplicando as mudancas//
-
+```
+```stata
+label values x x 
+```
 
 ### Practical Demonstration
 > The example and the database are taken from the book: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, by Jeffrey M. Wooldridge*"
@@ -254,6 +259,21 @@ sum
         hins |      1,506           1           0          1          1
         hdem |      1,737           1           0          1          1
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```r
 tab age
