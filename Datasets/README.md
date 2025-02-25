@@ -1,20 +1,9 @@
-# Datasets
+## Datasets
+### Principais Indicadores Brasileiros
 
-> Dados são informações coletadas e organizadas que podem ser analisadas para gerar insights. Eles podem ser numéricos, textuais, visuais ou de qualquer 
-> outra forma que represente uma realidade ou fenômeno. Os dados podem ser classificados em diferentes tipos, como:
-
-- Dados Quantitativos: Representam quantidades e podem ser medidos. Exemplos incluem números de vendas, temperaturas, alturas, etc.
-- Dados Qualitativos: Representam características ou qualidades e são descritivos. Exemplos incluem opiniões, categorias, cores, etc.
-- Dados Estruturados: Organizados em um formato fixo, como tabelas em bancos de dados, onde cada campo tem um tipo específico de dado.
-- Dados Não Estruturados: Não seguem um formato predefinido, como textos livres, imagens, vídeos, etc.
-- Dados Temporais: Relacionados ao tempo, como séries temporais que mostram como uma variável muda ao longo do tempo.
-
-
-## Principais Indicadores Brasileiros
-
-FGV IBRE
+#### FGV IBRE
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
-- Índice Geral de Preços - Mercado (IGP-M) = Utilizado como referência para reajustes de contratos, refletindo a inflação no nível do consumidor.
+- Índice Geral de Preços de Mercado (IGP-M) = Utilizado como referência para reajustes de contratos, refletindo a inflação no nível do consumidor.
 - Índice de Preços ao Produtor Amplo (IPA) = Mede a variação de preços de produtos no atacado, refletindo a inflação no nível do produtor.
 - Índice Nacional de Custo da Construção (INCC) = Avalia a variação dos custos da construção civil, incluindo materiais e mão de obra.
 - Índice de Confiança do Consumidor (ICC) = Mede a confiança dos consumidores em relação à economia e suas expectativas sobre a situação financeira pessoal.
@@ -23,7 +12,7 @@ FGV IBRE
 - Índice de Preços ao Consumidor Classe 2 (IPC-C2): Refere-se à variação de preços para famílias com renda entre 2,5 e 5 salários mínimos.
 - Índice de Preços ao Consumidor Classe 3 (IPC-C3): Refere-se à variação de preços para famílias com renda acima de 5 salários mínimos.
   
-IPEA
+#### IPEA
 - Produto Interno Bruto (PIB)
 - Índice de Preços ao Consumidor (IPC)
 - Taxa de Desemprego
@@ -33,7 +22,7 @@ IPEA
 - Indicador de Inflação por Faixa de Renda
 - Taxa de Desocupação (TD)
 
-IBGE 
+#### IBGE
 - Pesquisa Anual de Comércio (PAC)
 - Índice de Preços ao Consumidor Amplo (IPCA)
 - Pesquisa Anual de Serviços (PAS)
@@ -45,21 +34,7 @@ IBGE
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
-## Encontrar Dados
-- https://basedosdados.org/#theme
-- https://www3.bcb.gov.br/sgspub/
-- https://sidra.ibge.gov.br/
-- https://www.ibge.gov.br/
-- https://www.portaldefinancas.com/
-- https://data.nasdaq.com/
-- https://www.statista.com/
-- https://www.seade.gov.br/
-- https://www.indexmundi.com/
-- https://www.iea.org/
-- https://fred.stlouisfed.org/
-
-
-## Agências Nacionais
+#### Agências/Institutos Nacionais
 Conab (Companhia Nacional de Abastecimento)
 Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
 ABRAS (Associação Brasileira de Supermercados)
@@ -69,40 +44,51 @@ FIESP (Federação das Indústrias do Estado de São Paulo)
 CNA (Confederação da Agricultura e Pecuária do Brasil)
 Portal da Indústria (Confederação Nacional da Indústria)
 
-## Principais Indicadores Globais 
+#### Links
+https://basedosdados.org/#theme
 
+https://www3.bcb.gov.br/sgspub/
+
+https://sidra.ibge.gov.br/
+
+https://www.ibge.gov.br/
+
+https://www.portaldefinancas.com/
+
+https://www.seade.gov.br/
+
+### Principais Indicadores Globais 
 Índice de Desenvolvimento Humano (IDH)
 Índice de Gini
 
-
-
-## Encontrar Dados Globais
+#### Principais Agências/Institutos Nacionais
 - National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
 - AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
 
+#### Links
+https://www.iea.org/
 
+https://data.nasdaq.com/
 
+https://www.indexmundi.com/
 
-R
+https://fred.stlouisfed.org/
 
-### Tipo de dado que queremos no R
-- ts: série temporal
-- zoo: objeto zoo 
-- xts: no formato xts
-- timeSeries: série financeira
+https://www.statista.com/
 
- Configurando API (https://data.nasdaq.com/publishers/QDL) -> criar sua própria API Key
+## Importando dados com R
+```
+# Quandl
+Configurando API (https://data.nasdaq.com/publishers/QDL) -> criar sua própria API Key
 Quandl.api_key("iVtrK8_YHwXzG9pA4mmQ")
-
-
-### SGS 
-
-
+```
+```
+# SGS - Sistema Gerenciado de Séries do Banco Central
 dados <- gbcbd_get_series(id = 4380, first.date = "2000-01-01",last.date = Sys.Date())
 View(dados)
 dygraph(dados, main = "Título") %>% dyRangeSelector()
 
-#### Criando série
+# Criando série
 dados_x <- dados$"value"
 serie <- ts(dados_x, frequency = 12, star= c(2000), end=(2004))
 title("Título")
@@ -111,27 +97,25 @@ plot(serie)
 Se tivermos uma base tratada, uma outra alterntiva seria transformar dataframe em vetor.
 dados_vec <- as.vector(t(dados))
 print(dados_vec)
+```
 
-
-### IPEA
-
-
+```
+# IPEA
 series_ipeadata <- available_series()
 filter(series_ipeadata,str_detect(source, regex("caged", ignore_case = TRUE)))
 View(series_ipeadata)
 
-#Selecionando a série desejada
+# Selecionando a série desejada
 glp <- ipeadata("ANP_CGASN")
 View(glp)
 
 dados_x <- glp$"value"
 gnp_serie <- ts(dados_x, frequency = 12, star= c(2005))
 plot(gnp_serie)
+```
 
-
-### Excel/CSV
-
-
+```
+# Excel/CSV
 getwd() #representa o diretório de trabalho atual do processo R
 setwd("C:/Users/henri/OneDrive/Repositórios")
 
@@ -146,21 +130,43 @@ View(dados)
 - sep = separando as variáveis 
 - fileEncoding = "UTF-8" or "latin1"
 - read.csv -> o default é sep=”,” e dec=”.”
--  read.csv2 -> o default é sep=”;” e dec=”,”.
+- read.csv2 -> o default é sep=”;” e dec=”,”.
+```
 
-
-### Yahoo Finance 
-
+```
+# Yahoo Finance 
 microsoft <- getSymbols("MSFT", src = "yahoo", auto.assign = FALSE, return.class = 'xts')
 View(microsoft)
 plot(microsoft)
 
 - Open: O preço de abertura nas datas especificadas
--  High: O preço da alta nas datas especificadas
+- High: O preço da alta nas datas especificadas
 - Low: O preço da baixa nas datas especificadas
 - Close: O preço de fechamento nas datas especificadas
 - Volume: O volume nas datas especificadas
 - Adjusted: O preço de fechamento ajustado depois de aplicar distribuições de dividendos ou divisão da ação.
+```
+
+## Importando dados com Python
+```
+########################
+### Importando dados ###
+########################
+
+#####################
+### Yahoo Finance ###
+#####################
+
+petro = yf.download("PETR4.SA", start='2015-01-01')
+petro
+
+###########
+### CSV ###
+###########
+
+petro = pd.read_csv('"C:/Users/henri/OneDrive/Repositórios/Python/Impotando_dados/Datasets/petrogol.csv')
+petro
+```
 
 
 
