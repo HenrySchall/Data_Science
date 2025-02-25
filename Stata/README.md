@@ -1,6 +1,6 @@
 ## Introduction
-- Dowload Stata 17 MP:
-- Dowload Stata 18 SE: 
+- Dowload Stata 18 SE Windows:
+- Dowload Stata 18 SE MACOS: 
 - Comunidade: https://www.statalist.org/forums/
   
 > Stata is a statistical software created by the company StataCorp, headquartered in College Station, Texas, USA. It was initially developed in 1985 by William Gould, the company's founder, who sought to create software with simple navigation to analyze statistical data. Unlike its more popular open source competitors, such as Python and R, Stata is a close source software, It this mean that, all updates performed by the controlling company, not allowing users to download or create content to the software.
@@ -95,47 +95,47 @@ help
 ```
 
 ### Arithmetic Operations
-- Soma
+- Sum
 ```stata
 +
 ```
 
-- substracao
+- Subtraction
 ```stata
 -
 ```
 
-- multiplicacao 
+- Multiplication
 ```stata
 *
 ```
 
-- divisao 
+- Division
 ```stata
 /
 ```
 
-- potencia
+- Potentiation
 ```stata
 ^
 ```
 
-- igualdade
+- Equality
 ```stata
 ==
 ```
 
-- maior que
+- Greater than
 ```stata
 > or =>
 ```
 
-- menor que 
+- Less than
 ```stata
 < or <=
 ```
 
-- diferenca 
+- Difference 
 ```stata
 ~
 ```
@@ -145,12 +145,12 @@ help
 &
 ```
 
-- ou (uma condicoes ou outra precisa ser satisfeita)
+- or (uma condicoes ou outra precisa ser satisfeita)
 ```stata
 |
 ```
 
-- atribuindo valor
+- Assigning value
 ```stata
 =
 ```
@@ -170,37 +170,37 @@ recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
 replace idade = 25 if sexo == 1
 ```
 
-- excluir informações faltantes
+- Delete missing information
 ```stata
 drop if missing(x)
 ```
 
-- excluir informações expecíficas
+- Delete specific information
 ```stata
 drop if ==X
 ```
 
-- manter apenas variáveis específica
+- Keep only specific variables
 ```stata
 keep
 ```
 
--  manter a variável com modificações
+- Keep the variable with modifications
 ```stata
 keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
 ```
 
-- renomear variáveis de interesse
+- Rename variables of interest
 ```stata
 rename x y
 ```
 
-- mudar descrição da variável
+- Change variable description
 ```stata
 label variable ano "V0101-ANO DE REFERÊNCIA"
 ```
 
-- alterando rótulos das dados das variáveis
+- Change data labels of variables
 ```stata
 label define x 1 "y" 2 "w", replace //especificando mudancas //
 ```
@@ -275,58 +275,5 @@ sum
 
 
 
-```r
-tab age
-```
-![2](https://github.com/user-attachments/assets/be67fa1b-0776-40ad-8d9a-1d28ca7c24f3)
-
-> Podemos observar que a base de dados apresenta idades que vão de 65 anos até 90 anos
-
-```r
-sum age if female==1
-```
-![3](https://github.com/user-attachments/assets/1f93dd99-31f0-4dcb-9bc3-649b2d38803f)
-
-> Obtendo o resumo da variável age, condicionado ao fator de ser mulher
-
-```r
-sum age if female==0
-```
-![4](https://github.com/user-attachments/assets/acc6c15e-877e-4133-b4aa-b80cc7e502cb)
-
-> Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
- 
-```r
-sort female
-by female:sum age
-```
-![5](https://github.com/user-attachments/assets/bc362efb-010d-4667-85c0-be9e96431a4c)
-> Obtendo o resumo da variável female, condicionado ao fator idade (age)
-
-```r
-generate log_age = log(age)
-gen ln_age = ln(age)
-```
-> Gerando os logs da variável age
-
-```r
-pwcorr age famsze, star(.1)
-```
-![7](https://github.com/user-attachments/assets/3f2dd87e-5de6-416e-b975-f2cfdcc75f83)
-> Gerando matriz de Correlação.
-  - O comando star(.1) adiciona asteriscos à matriz de correlação para indicar a significância estatística com um nível de significância de 0.1 (10%)
-
-```r
-reg totexp age famsze
-```
-![8](https://github.com/user-attachments/assets/53122f77-059c-4324-9bad-a2da4bd94bd9)
-
-* a ordem é variavel dependente e depois as variaveis explicativas
-* estimação de todos os elementos é sempre usando MQO
-* std. err = erros padrões
-* se o meu modelo passa no teste global eu não preciso fazer os testes individuais
-* leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
-* R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
-* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos correlcao e o grau de associacao eentre duas variavies
 
 
