@@ -3,25 +3,19 @@
 - Dowload Stata 18 SE: 
 - Comunidade: https://www.statalist.org/forums/
   
-> O Stata é um software de estatística criado pela empresa StataCorp, sediada em College Station, Texas, EUA. Ele foi desenvolvido inicialmente em 1985 por William Gould, o fundador da empresa, como uma ferramenta para a análise de dados estatísticos.
+> Stata is a statistical software created by the company StataCorp, headquartered in College Station, Texas, USA. It was initially developed in 1985 by William Gould, the company's founder, who sought to create software with simple navigation to analyze statistical data. Unlike its more popular open source competitors, such as Python and R, Stata is a close source software, with all its updates carried out by the parent company, not allowing users to download content to the application.
 
-### Arquivos .do
-> No Stata é possível criar arquivos com a extensão .do, esses arquivos são script que podem armazenar comandos digitados no Stata em formato de texto, ou seja, um bloco de notas. Eles ajudam a automatizar análises de dados, permitindo que os usuários executem uma série de comandos de forma sequencial e replicável.
+#### Data Types
+Qualitative (non-numeric attributes).
+- Nominal: Denominations (colors, gender, race, titles, etc.)
+- Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
 
-- Comandos Básicos -> https://github.com/HenrySchall/Basic_Stata/blob/main/Introdu%C3%A7%C3%A3o.do
+Quantitative (numerical attributes).
+- Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
+- Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
 
-#### Tipos de Dados
-
-Qualitativos (atributos não numéricos).
-- Nominais: Denominações (cores, gênero, raça, títulos…)
-- Ordinais: atributos que podem ser classificados (Ex: classificação de filmes mais assistidos, grau de escolaridade, nível de satisfação…).
-
-Quantitativos (atributos numéricas).
-- Discreto: valores finitos ou enumeráveis (quantidade de pessoas numa sala, número de carros em um estacionamento…)
-- Contínuo: infinitos valores possíveis num intervalo (renda, tempo, altura…).
-
-### Demonstraçâo Prática 
-> O exemplo e a base de dados são retirados do livro: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, de Jeffrey M. Wooldridge*"
+### Practical Demonstration
+> The example and the database are taken from the book: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, by Jeffrey M. Wooldridge*"
 
 Carregar Base -> health.dta
 
@@ -88,6 +82,9 @@ reg totexp age famsze
 correlcao e o grau de associacao eentre duas variavies
 
 
+## .do files
+> In Stata, it is possible to create files with the .do extension. These files are scripts that can store commands typed in Stata in text format, i.e., a notepad. They help automate data analysis, allowing users to execute a series of commands in a sequential and replicable manner.
 
+- Comandos Básicos -> https://github.com/HenrySchall/Basic_Stata/blob/main/Introdu%C3%A7%C3%A3o.do
 
 
