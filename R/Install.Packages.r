@@ -38,9 +38,11 @@ library(ipeadatar)
 library(sidrar) 
 library(stringr)
 library(fma)
+library(rio)   
 
 # Instalando pacotes (Alternativa 1)
 if(!require(dplyr)){install.packages("dplyr")}
+if(!require(rio)){install.packages("rio")}
 if(!require(tidyverse)){install.packages("tidyverse")}
 if(!require(TeachingDemos)){install.packages("TeachingDemos")}
 if(!require(EnvStats)){install.packages("EnvStats")}
