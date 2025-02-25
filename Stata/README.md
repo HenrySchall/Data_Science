@@ -1,4 +1,4 @@
-## Introdução
+## Introduction
 - Dowload Stata 17 MP:
 - Dowload Stata 18 SE: 
 - Comunidade: https://www.statalist.org/forums/
@@ -48,20 +48,30 @@ set more off
 ```stata
 doedit
 ```
+
 - Gerar nova variavel
 ```stata
 generate
 ```
 
--
-// resumir variaveis
+- Resumir variaveis
+```stata
 summarize ou sum
--
-// descrever variáveis
-describe 
--
-// criar tabelas de frequência
+```
+
+- Descrever variáveis
+```stata
+describe
+```
+
+- Criar tabelas de frequência
+```stata
 tab
+```
+
+
+
+
 -
 // usar para limpar a base anterior e carregar uma nova
 clear
