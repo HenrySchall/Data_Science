@@ -542,7 +542,7 @@ pwcorr age famsze, star(.1)
          age |   1.0000 
       famsze |  -0.1663*  1.0000
 ```
-> (*) Inside the parentheses is the significance level, .1 = 10%, .05 = 5%. When (*) is displayed it means that the correlation is significant, at the defined significance level.
+> ( * ) Inside the parentheses is the significance level, .1 = 10%, .05 = 5%. When ( * ) is displayed it means that the correlation is significant, at the defined significance level.
 
 ```
 reg totexp age famsze
