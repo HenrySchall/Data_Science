@@ -5,7 +5,7 @@
   
 > Stata is a statistical software created by the company StataCorp, headquartered in College Station, Texas, USA. It was initially developed in 1985 by William Gould, the company's founder, who sought to create software with simple navigation to analyze statistical data. Unlike its more popular open source competitors, such as Python and R, Stata is a close source software, with all its updates carried out by the parent company, not allowing users to download content to the application.
 
-#### Data Types
+### Data Types
 Qualitative (non-numeric attributes).
 - Nominal: Denominations (colors, gender, race, titles, etc.)
 - Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
