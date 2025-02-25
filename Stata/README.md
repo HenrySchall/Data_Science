@@ -1,7 +1,7 @@
 ## Introduction
 - Dowload Windows: https://drive.proton.me/urls/D0BESH8MZW#EAHz8YJyyWYF
-- Dowload MacOS:
-- Other Alternatives: 
+- Dowload MacOS: https://drive.proton.me/urls/ZG5WR8C60C#w37DMBREbseC
+- If it doesn't work, install previous version: 
 - Comunidade: https://www.statalist.org/forums/
   
 > Stata is a statistical software created by the company StataCorp, headquartered in College Station, Texas, USA. It was initially developed in 1985 by William Gould, the company's founder, who sought to create software with simple navigation to analyze statistical data. Unlike its more popular open source competitors, such as Python and R, Stata is a close source software, It this mean that, all updates performed by the controlling company, not allowing users to download or create content to the software.
@@ -561,6 +561,8 @@ reg totexp age famsze
        _cons |   4826.431   2636.526     1.83   0.067    -343.1088     9995.97
 ------------------------------------------------------------------------------
 ```
+
+
 
 
 
