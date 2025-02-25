@@ -1,113 +1,57 @@
-*------------------*
-* COMANDOS BÁSICOS *
-*------------------*
+```r
+tab age
+```
+![2](https://github.com/user-attachments/assets/be67fa1b-0776-40ad-8d9a-1d28ca7c24f3)
 
-// criando diretório de trabalho
-cd "C:\Stata"
+> Podemos observar que a base de dados apresenta idades que vão de 65 anos até 90 anos
 
-// abrir configuracoes
-set 
+```r
+sum age if female==1
+```
+![3](https://github.com/user-attachments/assets/1f93dd99-31f0-4dcb-9bc3-649b2d38803f)
 
-// define a vírgula como separador decimal
-set dp comma
+> Obtendo o resumo da variável age, condicionado ao fator de ser mulher
 
-// retornar ao padrão (separador decimal ponto)
-set dp period
+```r
+sum age if female==0
+```
+![4](https://github.com/user-attachments/assets/acc6c15e-877e-4133-b4aa-b80cc7e502cb)
 
-// desativar a pausa automática ao exibir longas listas de resultados na tela
-set more off 
+> Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
+ 
+```r
+sort female
+by female:sum age
+```
+![5](https://github.com/user-attachments/assets/bc362efb-010d-4667-85c0-be9e96431a4c)
+> Obtendo o resumo da variável female, condicionado ao fator idade (age)
 
-// abrir doedit
-doedit 
+```r
+generate log_age = log(age)
+gen ln_age = ln(age)
+```
+> Gerando os logs da variável age
 
-// gerar nova variavel
-generate 
+```r
+pwcorr age famsze, star(.1)
+```
+![7](https://github.com/user-attachments/assets/3f2dd87e-5de6-416e-b975-f2cfdcc75f83)
+> Gerando matriz de Correlação.
+  - O comando star(.1) adiciona asteriscos à matriz de correlação para indicar a significância estatística com um nível de significância de 0.1 (10%)
 
-// resumir variaveis
-summarize ou sum
+```r
+reg totexp age famsze
+```
+![8](https://github.com/user-attachments/assets/53122f77-059c-4324-9bad-a2da4bd94bd9)
 
-// descrever variáveis
-describe 
+* a ordem é variavel dependente e depois as variaveis explicativas
+* estimação de todos os elementos é sempre usando MQO
+* std. err = erros padrões
+* se o meu modelo passa no teste global eu não preciso fazer os testes individuais
+* leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
+* R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
+* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos correlcao e o grau de associacao eentre duas variavies
 
-// criar tabelas de frequência
-tab
-
-// usar para limpar a base anterior e carregar uma nova
-clear
-
-// visualizar base
-view 
-
-// limpar aba de resultados
-cls
-
-// re-classificar variávies
-recode
-recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
-
-// substituir variáveis
-replace
-replace idade = 25 if sexo == 1
-
-// organizar de forma crescente
-bysort
-
-// pedir ajuda
-help
-
-*-----------------------------------------------*
-* OPERADORES ARITMÉTICOS, RELACIONAIS E LÓGICOS *
-*-----------------------------------------------*
-
-// OPERAÇÕES ARITMÉTICAS
-1) soma -> +
-2) substracao -> -
-3) multiplicacao -> *
-4) divisao -> /
-5) potencia -> ^
-
-// Exemplos:
-display 4+7
-display 9-7
-display 6*5
-display 16/4
-display 2^4
-display 3*(10-8)
-display (-9)^2/3
-
-// OPERAÇÕES RELACIONAIS E LÓGICAS
-1) igualdade -> ==
-2) maior que -> > or =>
-3) menor que -> < or <=
-4) diferenca -> ~
-5) e -> & (duas condicoes precisam ser satisfeitas ao mesmo tempo)
-6) ou -> | (uma condicoes ou outra precisa ser satisfeita)
-7) atribuindo valor -> = 
-
-*---------------------*
-* MANIPULAR VARIÁVEIS *
-*---------------------*
-
-// excluir variáveis
-drop 
-
-// excluir informações
-drop if missing(x) //informações faltantes//
-drop if ==X //informações expecíficas//
-keep //manter apenas variáveis específicas//
-
-// manter a variável com modificações
-keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
-
-// renomear variáveis de interesse
-rename x y
-
-// mudar descrição da variável
-label variable ano "V0101-ANO DE REFERÊNCIA"
-
-// alterando rótulos das dados das variáveis
-label define x 1 "y" 2 "w", replace //especificando mudancas //
-label values x x //aplicando as mudancas//
 
 
 sum
