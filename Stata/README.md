@@ -114,42 +114,34 @@ recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
 replace idade = 25 if sexo == 1
 ```
 
-
-
-
-
-
-
-// organizar de forma crescente
+- Organize in ascending order
+```stata
 bysort
+```
 
-// pedir ajuda
+- Ask Help
+```stata
 help
+```
 
 
+// excluir informações
+drop if missing(x) //informações faltantes//
+drop if ==X //informações expecíficas//
+keep //manter apenas variáveis específicas//
 
+// manter a variável com modificações
+keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
 
+// renomear variáveis de interesse
+rename x y
 
+// mudar descrição da variável
+label variable ano "V0101-ANO DE REFERÊNCIA"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// alterando rótulos das dados das variáveis
+label define x 1 "y" 2 "w", replace //especificando mudancas //
+label values x x //aplicando as mudancas//
 
 
 ### Practical Demonstration
@@ -157,10 +149,52 @@ help
 
 Carregar Base -> health.dta
 
-```r
+```Stata
 sum
 ```
-![1](https://github.com/user-attachments/assets/6a0e0bb3-380f-484e-8d34-abcdbac26e37)
+
+```Stata
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+    dupersid |      3,064    6.24e+07    3.43e+07   2.00e+07   9.83e+07
+      year03 |      3,064           1           0          1          1
+         age |      3,064    74.17167    6.372938         65         90
+      famsze |      3,064    1.907963    .9883496          1         13
+      educyr |      3,064    11.77546    3.435878          0         17
+-------------+---------------------------------------------------------
+      totexp |      3,064    7030.889    11852.75          0     125610
+     private |      3,064    .5812663    .4934321          0          1
+      retire |      3,064    .5946475    .4910403          0          1
+      female |      3,064    .5796345    .4936982          0          1
+       white |      3,064    .9742167    .1585141          0          1
+-------------+---------------------------------------------------------
+        hisp |      3,064    .0848564    .2787134          0          1
+       marry |      3,064    .5558094    .4969567          0          1
+      northe |      3,064    .1517624     .358849          0          1
+       mwest |      3,064    .2310705    .4215862          0          1
+       south |      3,064    .3962141    .4891897          0          1
+-------------+---------------------------------------------------------
+      phylim |      3,064    .4255875    .4945125          0          1
+      actlim |      3,064    .2836162    .4508263          0          1
+         msa |      3,064    .7415144    .4378737          0          1
+      income |      3,064    22.47472    22.53491         -1     312.46
+      injury |      3,064    .1964752    .3973968          0          1
+-------------+---------------------------------------------------------
+    priolist |      3,064    .8028721    .3978947          0          1
+      totchr |      3,064    1.754243    1.307197          0          7
+         omc |      3,064    .4461488    .4971727          0          1
+         hmo |      3,064    .1158616    .3201111          0          1
+         mnc |      3,064    .0192559    .1374454          0          1
+-------------+---------------------------------------------------------
+       ratio |      3,064    .0120952    .0958159          0          1
+      posexp |      3,064    .9644256    .1852568          0          1
+     suppins |      3,064    .5812663    .4934321          0          1
+        hvgg |      3,064    .6054178    .4888406          0          1
+         hfp |      3,064    .2078982    .4216508          0          2
+-------------+---------------------------------------------------------
+        hins |      1,506           1           0          1          1
+        hdem |      1,737           1           0          1          1
+```
 
 ```r
 tab age
