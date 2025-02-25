@@ -84,22 +84,78 @@ view
 cls
 ```
 
-- Arithmetic Operations
+- Organize in ascending order
 ```stata
-soma -> +
-substracao -> -
-multiplicacao -> *
-divisao -> /
-potencia -> ^
-igualdade -> ==
-maior que -> > or =>
-menor que -> < or <=
-diferenca -> ~
-e -> & (duas condicoes precisam ser satisfeitas ao mesmo tempo)
-ou -> | (uma condicoes ou outra precisa ser satisfeita)
-atribuindo valor -> = 
+bysort
 ```
 
+- Ask Help
+```stata
+help
+```
+
+### Arithmetic Operations
+- Soma
+```stata
++
+```
+
+- substracao
+```stata
+-
+```
+
+- multiplicacao 
+```stata
+*
+```
+
+- divisao 
+```stata
+/
+```
+
+- potencia
+```stata
+^
+```
+
+- igualdade
+```stata
+==
+```
+
+- maior que
+```stata
+> or =>
+```
+
+- menor que 
+```stata
+< or <=
+```
+
+- diferenca 
+```stata
+~
+```
+
+- e (duas condicoes precisam ser satisfeitas ao mesmo tempo)
+```stata
+&
+```
+
+- ou (uma condicoes ou outra precisa ser satisfeita)
+```stata
+|
+```
+
+- atribuindo valor
+```stata
+=
+```
+
+### Manipulate Variables 
 - Delete variables
 ```stata
 drop
@@ -114,21 +170,24 @@ recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
 replace idade = 25 if sexo == 1
 ```
 
-- Organize in ascending order
+- excluir informações faltantes
 ```stata
-bysort
+drop if missing(x)
 ```
 
-- Ask Help
+- excluir informações expecíficas
 ```stata
-help
+drop if ==X
 ```
 
+- manter apenas variáveis específica
+```stata
+keep
+```
 
-// excluir informações
-drop if missing(x) //informações faltantes//
-drop if ==X //informações expecíficas//
-keep //manter apenas variáveis específicas//
+```stata
+keep
+```
 
 // manter a variável com modificações
 keep if  V8005>=18 & V8005<=24 /*(manter apenas individuos jovens)*/
