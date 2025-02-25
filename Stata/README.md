@@ -1,5 +1,5 @@
 ## Introduction
-- Dowload Stata 18 SE Windows:
+- Dowload Stata 18 SE Windows: https://drive.proton.me/urls/D0BESH8MZW#EAHz8YJyyWYF
 - Dowload Stata 18 SE MACOS: 
 - Comunidade: https://www.statalist.org/forums/
   
@@ -348,6 +348,7 @@ sum age
 ```
 sum age if female==1
 ```
+> obtendo o resumo da variável age, condicionado ao fator de ser mulher
 
 ```
     Variable |        Obs        Mean    Std. dev.       Min        Max
@@ -358,6 +359,7 @@ sum age if female==1
 ```
 sum age if female==0
 ```
+> Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
 
 ```
     Variable |        Obs        Mean    Std. dev.       Min        Max
@@ -365,6 +367,99 @@ sum age if female==0
          age |      1,288    73.55823    6.145834         65         89
 ```
 
+```
+sort female
+by female:sum age
+```
+> Obtendo o resumo da variável female, condicionado ao fator idade (age)
+
+```
+-----------------------------------------------------------------------------
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      1,288    73.55823    6.145834         65         89
+
+-----------------------------------------------------------------------------
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      1,776    74.61655    6.498272         65         90
+```
+
+```
+generate velhos=0
+```
+
+```
+edit velhos
+```
+> Create dummy variable
+
+```
+replace velhos=1 if age>=85
+(312 real changes made)
+```
+
+```
+tab age if age >=85
+```
+
+```
+
+        Age |      Freq.     Percent        Cum.
+------------+-----------------------------------
+         85 |        295       94.55       94.55
+         86 |          4        1.28       95.83
+         87 |          4        1.28       97.12
+         88 |          3        0.96       98.08
+         89 |          2        0.64       98.72
+         90 |          4        1.28      100.00
+------------+-----------------------------------
+      Total |        312      100.00
+```
+
+```
+generate log_age = log(age)
+```
+> Gerando os logs da variável age
+
+```
+sum age lage
+```
+
+```
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      3,064    74.17167    6.372938         65         90
+        lage |      3,064    4.302728    .0853122   4.174387    4.49981
+```
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+```r
+pwcorr age famsze, star(.1)
+```
+![7](https://github.com/user-attachments/assets/3f2dd87e-5de6-416e-b975-f2cfdcc75f83)
+> Gerando matriz de Correlação.
+  - O comando star(.1) adiciona asteriscos à matriz de correlação para indicar a significância estatística com um nível de significância de 0.1 (10%)
+
+```r
+reg totexp age famsze
+```
+![8](https://github.com/user-attachments/assets/53122f77-059c-4324-9bad-a2da4bd94bd9)
+
+* a ordem é variavel dependente e depois as variaveis explicativas
+* estimação de todos os elementos é sempre usando MQO
+* std. err = erros padrões
+* se o meu modelo passa no teste global eu não preciso fazer os testes individuais
+* leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
+* R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
+* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos correlcao e o grau de associacao eentre duas variavies
 
 
 
