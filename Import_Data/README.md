@@ -2,7 +2,6 @@
 ### Principais Indicadores Brasileiros
 
 #### FGV IBRE
-
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
 - Índice Geral de Preços - Mercado (IGP-M) = Utilizado como referência para reajustes de contratos, refletindo a inflação no nível do consumidor.
 - Índice de Preços ao Produtor Amplo (IPA) = Mede a variação de preços de produtos no atacado, refletindo a inflação no nível do produtor.
@@ -14,7 +13,6 @@
 - Índice de Preços ao Consumidor Classe 3 (IPC-C3): Refere-se à variação de preços para famílias com renda acima de 5 salários mínimos.
   
 #### IPEA
-
 - Produto Interno Bruto (PIB)
 - Índice de Preços ao Consumidor (IPC)
 - Taxa de Desemprego
@@ -25,7 +23,6 @@
 - Taxa de Desocupação (TD)
 
 #### IBGE
-
 - Pesquisa Anual de Comércio (PAC)
 - Índice de Preços ao Consumidor Amplo (IPCA)
 - Pesquisa Anual de Serviços (PAS)
@@ -38,7 +35,6 @@
 - Pesquisa de Orçamentos Familiares (POF)
 
 #### Agências/Institutos Nacionais
-
 Conab (Companhia Nacional de Abastecimento)
 Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
 ABRAS (Associação Brasileira de Supermercados)
@@ -49,33 +45,38 @@ CNA (Confederação da Agricultura e Pecuária do Brasil)
 Portal da Indústria (Confederação Nacional da Indústria)
 
 #### Links
-
 https://basedosdados.org/#theme
+
 https://www3.bcb.gov.br/sgspub/
+
 https://sidra.ibge.gov.br/
+
 https://www.ibge.gov.br/
+
 https://www.portaldefinancas.com/
-https://data.nasdaq.com/
-https://www.statista.com/
+
 https://www.seade.gov.br/
-https://www.indexmundi.com/
-https://www.iea.org/
-https://fred.stlouisfed.org/
 
 ### Principais Indicadores Globais 
-
 Índice de Desenvolvimento Humano (IDH)
 Índice de Gini
 
 #### Principais Agências/Institutos Nacionais
-
 - National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
 - AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
 
 #### Links
+https://www.iea.org/
+
+https://data.nasdaq.com/
+
+https://www.indexmundi.com/
+
+https://fred.stlouisfed.org/
+
+https://www.statista.com/
 
 ## Importando dados com R
-
 ```
 # Quandl
 Configurando API (https://data.nasdaq.com/publishers/QDL) -> criar sua própria API Key
@@ -147,5 +148,8 @@ plot(microsoft)
 ```
 
 ## Importando dados com Python
+```
+```
+
 
 
