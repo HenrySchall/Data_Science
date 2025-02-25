@@ -1,4 +1,5 @@
 # Instalando pacotes
+
 if(!require(dplyr)){install.packages("dplyr")}
 if(!require(rio)){install.packages("rio")}
 if(!require(tidyverse)){install.packages("tidyverse")}
@@ -43,6 +44,7 @@ if(!require(stringr)){install.packages("stringr")}
 if(!require(fma)){install.packages("fma")}
 
 # Instalando pacotes forma Alternativa
+
 install.packages = c("tidyverse", "TeachingDemos", "EnvStats","readr","readxl",  "xtable", "stargazer", "highcharter", "quantmod",
 "dygraphs","tseries", "htmltools", "Quandl", "nycflights13", "magrittr","discreteRV", "aTSA", "fGarch", "fUnitRoots", "vars", "MTS", "seasonal",
 "urca", "dynlm", "tbl2xts", "dlm", "stats", "tcltk", "tcltk2", "forecast", "Quandl", "dygraphs", "magrittr", "PerformanceAnalytics", "quantmod",
@@ -57,6 +59,7 @@ print(install.packages)
 message("Pacotes carregados")
 
 # Carregando pacotes
+
 library(dplyr)
 library(tidyverse)
 library(TeachingDemos)
@@ -99,4 +102,5 @@ library(fma)
 library(rio)   
 
 # Remover pacotes
+
 remove.packages("argo")
