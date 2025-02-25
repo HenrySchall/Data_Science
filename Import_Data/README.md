@@ -105,7 +105,7 @@ series_ipeadata <- available_series()
 filter(series_ipeadata,str_detect(source, regex("caged", ignore_case = TRUE)))
 View(series_ipeadata)
 
-#Selecionando a série desejada
+# Selecionando a série desejada
 glp <- ipeadata("ANP_CGASN")
 View(glp)
 
@@ -130,7 +130,7 @@ View(dados)
 - sep = separando as variáveis 
 - fileEncoding = "UTF-8" or "latin1"
 - read.csv -> o default é sep=”,” e dec=”.”
--  read.csv2 -> o default é sep=”;” e dec=”,”.
+- read.csv2 -> o default é sep=”;” e dec=”,”.
 ```
 
 ```
