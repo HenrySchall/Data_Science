@@ -31,15 +31,11 @@ if(!require(tbl2xts)){install.packages("tbl2xts")}
 if(!require(dlm)){install.packages("dlm")}
 if(!require(stats)){install.packages("stats")}
 if(!require(tcltk)){install.packages("tcltk")}
-if(!require(forecast)){install.packages("forecast")}
 if(!require(ggplot2)){install.packages("ggplot2")}
 if(!require(PerformanceAnalytics)){install.packages("PerformanceAnalytics")}
 if(!require(nortest)){install.packages("nortest")}
 if(!require(scales)){install.packages("scales")}
 if(!require(seasonalview)){install.packages("seasonalview")}
-if(!require(GetBCBData)){install.packages("GetBCBData")}
-if(!require(ipeadatar)){install.packages("ipeadatar")}
-if(!require(sidrar)){install.packages("sidrar")}
 if(!require(stringr)){install.packages("stringr")}
 if(!require(fma)){install.packages("fma")}
 
@@ -89,14 +85,10 @@ library(tbl2xts)
 library(dlm)
 library(stats)
 library(tcltk)
-library(forecast)
 library(ggplot2)
 library(PerformanceAnalytics)
 library(nortest)
 library(scales)
-library(GetBCBData) 
-library(ipeadatar) 
-library(sidrar) 
 library(stringr)
 library(fma)
 library(rio)   
