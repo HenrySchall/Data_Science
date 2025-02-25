@@ -3,7 +3,7 @@
 
 #### FGV IBRE
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
-- Índice Geral de Preços - Mercado (IGP-M) = Utilizado como referência para reajustes de contratos, refletindo a inflação no nível do consumidor.
+- Índice Geral de Preços de Mercado (IGP-M) = Utilizado como referência para reajustes de contratos, refletindo a inflação no nível do consumidor.
 - Índice de Preços ao Produtor Amplo (IPA) = Mede a variação de preços de produtos no atacado, refletindo a inflação no nível do produtor.
 - Índice Nacional de Custo da Construção (INCC) = Avalia a variação dos custos da construção civil, incluindo materiais e mão de obra.
 - Índice de Confiança do Consumidor (ICC) = Mede a confiança dos consumidores em relação à economia e suas expectativas sobre a situação financeira pessoal.
