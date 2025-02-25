@@ -19,52 +19,52 @@ Quantitative (numerical attributes).
 
 ### Basic Commands
 
-- Criando diretório de trabalho
+- Creating working directory
 ```stata
 cd "C:\Stata"
 ```
 
-- Abrir configuracoes
+- Open settings
 ```stata
 set
 ```
 
-- Define a vírgula como separador decimal
+- Sets comma as decimal separator
 ```stata
 set dp comma
 ```
 
-- Retornar ao padrão (separador decimal ponto)
+- Return to default (dot decimal separator)
 ```stata
 set dp period
 ```
 
-- Desativar a pausa automática ao exibir longas listas de resultados na tela
+- Disable auto-pause when displaying long lists of results on the screen
 ```stata
 set more off
 ```
 
-- Abrir doedit
+- Open doedit
 ```stata
 doedit
 ```
 
-- Gerar nova variavel
+- Generate a new variable
 ```stata
 generate
 ```
 
-- Resumir variaveis
+- Summarize variables
 ```stata
 summarize ou sum
 ```
 
-- Descrever variáveis
+- Describe variables
 ```stata
 describe
 ```
 
-- Criar tabelas de frequência
+- Create frequency tables
 ```stata
 tab
 ```
