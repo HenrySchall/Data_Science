@@ -202,10 +202,10 @@ label variable ano "V0101-ANO DE REFERÊNCIA"
 ```
 
 - Change data labels of variables
-```stata
+```
 label define x 1 "y" 2 "w", replace //especificando mudancas //
 ```
-```stata
+```
 label values x x 
 ```
 
@@ -214,11 +214,10 @@ label values x x
 
 Carregar Base -> health.dta
 
-```Stata
+```
 sum
 ```
-
-```Stata
+```
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
     dupersid |      3,064    6.24e+07    3.43e+07   2.00e+07   9.83e+07
@@ -261,11 +260,10 @@ sum
         hdem |      1,737           1           0          1          1
 ```
 
-```Stata
+```
 tab age
 ```
-
-```Stata
+```
         Age |      Freq.     Percent        Cum.
 ------------+-----------------------------------
          65 |        249        8.13        8.13
@@ -299,7 +297,7 @@ tab age
 ```
 > We can see that the database presents ages ranging from 65 to 90 years old.
 
-```Stata
+```
 tab age female
 
            |     =1  if female
@@ -334,34 +332,32 @@ tab age female
 -----------+----------------------+----------
      Total |     1,288      1,776 |     3,064 
 ```
-> número de indivíduos totais da amostra separados pela idade e genero (1=female e 0=male)
+> Total number of individuals in the sample separated by age and gender (1=female and 0=male)
 
+- Summary variable age
 ```
 sum age
 ```
-
 ```
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
          age |      3,064    74.17167    6.372938         65         90
 ```
 
+- Obtaining the summary of the age variable, conditioned on the factor of being a woman
 ```
 sum age if female==1
 ```
-> obtendo o resumo da variável age, condicionado ao fator de ser mulher
-
 ```
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
          age |      1,776    74.61655    6.498272         65         90
 ```
 
+- Obtaining the summary of the age variable, conditioned on the factor of not being a woman
 ```
 sum age if female==0
 ```
-> Obtendo o resumo da variável age, condicionado ao fator de não ser mulher
-
 ```
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -507,51 +503,64 @@ tabulate age, generate(age_)
 ------------+-----------------------------------
       Total |      3,064      100.00
 ```
-
+- Creating scatter diagram
 ```
 scatter age famsze
 ```
-> criando diagrama de dispersão
 
 ```
 scatter age totexp
 ```
+
+```
 graph matrix age totexp
+```
 
 ```
 hist age
 ```
-
+- Calculated correlation
 ```
 corr age famsze
 ```
-> calculado correlação
 ```
-
              |      age   famsze
 -------------+------------------
          age |   1.0000
       famsze |  -0.1663   1.0000
 ```
 
+- Significance testing
 ```
 pwcorr age famsze, star(.1)
 ```
-> fazendo teste de significancia
 ```
              |      age   famsze
 -------------+------------------
          age |   1.0000 
       famsze |  -0.1663*  1.0000
 ```
+> (*) Inside the parentheses is the significance level, .1 = 10%, .05 = 5%. When (*) is displayed it means that the correlation is significant, at the defined significance level.
 
+```
+reg totexp age famsze
+```
+```
+      Source |       SS           df       MS      Number of obs   =     3,064
+-------------+----------------------------------   F(2, 3061)      =      3.74
+       Model |  1.0483e+09         2   524158380   Prob > F        =    0.0239
+    Residual |  4.2927e+11     3,061   140237044   R-squared       =    0.0024
+-------------+----------------------------------   Adj R-squared   =    0.0018
+       Total |  4.3031e+11     3,063   140487727   Root MSE        =     11842
 
-
-
-
-
-
-
+------------------------------------------------------------------------------
+      totexp | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+         age |   42.13606   34.04935     1.24   0.216    -24.62584     108.898
+      famsze |  -482.6316   219.5523    -2.20   0.028    -913.1164   -52.14688
+       _cons |   4826.431   2636.526     1.83   0.067    -343.1088     9995.97
+------------------------------------------------------------------------------
+```
 
 
 
@@ -586,9 +595,7 @@ pwcorr age famsze, star(.1)
 
 
 
-* valor dentro do parenteses é o nível de significancia, .1 = 10%, .05 = 5%
 
-* os asterisco (*) significa que a correlação é significantiva, ao nivel de significancia definido
 
 reg totexp age famsze
 
