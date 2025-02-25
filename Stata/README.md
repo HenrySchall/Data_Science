@@ -69,26 +69,56 @@ describe
 tab
 ```
 
-
-
-
--
-// usar para limpar a base anterior e carregar uma nova
+- Clear the old base and load a new one
+```stata
 clear
--
-// visualizar base
-view 
--
-// limpar aba de resultados
-cls
--
-// re-classificar variávies
-recode
-recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
+```
 
-// substituir variáveis
-replace
+- Base visualization 
+```stata
+view 
+```
+
+- Clear results
+```stata
+cls
+```
+
+- Arithmetic Operations
+```stata
+soma -> +
+substracao -> -
+multiplicacao -> *
+divisao -> /
+potencia -> ^
+igualdade -> ==
+maior que -> > or =>
+menor que -> < or <=
+diferenca -> ~
+e -> & (duas condicoes precisam ser satisfeitas ao mesmo tempo)
+ou -> | (uma condicoes ou outra precisa ser satisfeita)
+atribuindo valor -> = 
+```
+
+- Delete variables
+```stata
+drop
+```
+
+- Reclassify variables
+```stata
+recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
+```
+- Replace variables
+```stata
 replace idade = 25 if sexo == 1
+```
+
+
+
+
+
+
 
 // organizar de forma crescente
 bysort
