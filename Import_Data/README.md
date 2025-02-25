@@ -34,7 +34,17 @@
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
-#### Encontrar Dados
+#### Agências/Institutos Nacionais
+Conab (Companhia Nacional de Abastecimento)
+Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
+ABRAS (Associação Brasileira de Supermercados)
+Embrapa (Empresa Brasileira de Pesquisa Agropecuária)
+ABPA (Associação Brasileira de Proteína Animal)
+FIESP (Federação das Indústrias do Estado de São Paulo)
+CNA (Confederação da Agricultura e Pecuária do Brasil)
+Portal da Indústria (Confederação Nacional da Indústria)
+
+#### Links
 - https://basedosdados.org/#theme
 - https://www3.bcb.gov.br/sgspub/
 - https://sidra.ibge.gov.br/
@@ -47,25 +57,16 @@
 - https://www.iea.org/
 - https://fred.stlouisfed.org/
 
-
-#### Agências Nacionais
-Conab (Companhia Nacional de Abastecimento)
-Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
-ABRAS (Associação Brasileira de Supermercados)
-Embrapa (Empresa Brasileira de Pesquisa Agropecuária)
-ABPA (Associação Brasileira de Proteína Animal)
-FIESP (Federação das Indústrias do Estado de São Paulo)
-CNA (Confederação da Agricultura e Pecuária do Brasil)
-Portal da Indústria (Confederação Nacional da Indústria)
-
 ### Principais Indicadores Globais 
 
 Índice de Desenvolvimento Humano (IDH)
 Índice de Gini
 
-#### Encontrar Dados Globais
+#### Principais Agências/Institutos Nacionais
 - National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
 - AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
+
+#### Links
 
 
 
