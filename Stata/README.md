@@ -14,6 +14,104 @@ Quantitative (numerical attributes).
 - Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
 - Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
 
+### Doedit
+> In Stata, you can create a file called doedit, with the extension .do. These files are scripts that can store commands typed into Stata in text format, as if it were a notepad. They help automate data analysis by allowing users to execute a series of commands in a sequential and repeatable manner.
+
+### Basic Commands
+
+- Criando diretório de trabalho
+```stata
+cd "C:\Stata"
+```
+
+- Abrir configuracoes
+```stata
+set
+```
+
+- Define a vírgula como separador decimal
+```stata
+set dp comma
+```
+
+- Retornar ao padrão (separador decimal ponto)
+```stata
+set dp period
+```
+
+- Desativar a pausa automática ao exibir longas listas de resultados na tela
+```stata
+set more off
+```
+
+- Abrir doedit
+```stata
+doedit
+```
+- Gerar nova variavel
+```stata
+generate
+```
+
+-
+// resumir variaveis
+summarize ou sum
+-
+// descrever variáveis
+describe 
+-
+// criar tabelas de frequência
+tab
+-
+// usar para limpar a base anterior e carregar uma nova
+clear
+-
+// visualizar base
+view 
+-
+// limpar aba de resultados
+cls
+-
+// re-classificar variávies
+recode
+recode idade (0/17 = 1 "Jovem") (18/64 = 2 "Adulto") (65/max = 3 "Idoso")
+
+// substituir variáveis
+replace
+replace idade = 25 if sexo == 1
+
+// organizar de forma crescente
+bysort
+
+// pedir ajuda
+help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Practical Demonstration
 > The example and the database are taken from the book: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, by Jeffrey M. Wooldridge*"
 
@@ -76,15 +174,6 @@ reg totexp age famsze
 * se o meu modelo passa no teste global eu não preciso fazer os testes individuais
 * leitura coeficiente -> controlado pela variavel idade quando vc aumenta o tamanho da familia em 1 unidade os dados em media os gastos de saude caem 482 dolares
 * R-Squared * 100 = significa que 24% da idade e o do tamanho da familia explicam os gastos totais
-* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos
-
-
-correlcao e o grau de associacao eentre duas variavies
-
-
-## .do files
-> In Stata, it is possible to create files with the .do extension. These files are scripts that can store commands typed in Stata in text format, i.e., a notepad. They help automate data analysis, allowing users to execute a series of commands in a sequential and replicable manner.
-
-- Comandos Básicos -> https://github.com/HenrySchall/Basic_Stata/blob/main/Introdu%C3%A7%C3%A3o.do
+* analisando coeficientes -> age é positivo então o aumento da idade aumenta os gastos da família, já o tamanho da família é negativo, isso significa que familias maiores gastam menos correlcao e o grau de associacao eentre duas variavies
 
 
