@@ -79,3 +79,5 @@ https://www.indexmundi.com/
 https://fred.stlouisfed.org/
 
 https://www.statista.com/
+
+O Conference Board Leading Economic Index é um indicador econômico norte-americano destinado a prever a atividade econômica futura. É calculado pelo The Conference Board, uma organização não governamental, que determina o valor do índice a partir dos valores de dez variáveis-chave.
