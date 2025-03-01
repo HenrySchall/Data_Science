@@ -873,6 +873,72 @@ ggplot(data = dados, aes(x = Genero, y = LucroLocal)) +
   geom_point(stat = "summary", fun = "mean") +
   geom_errorbar(stat = "summary", fun.data = "mean_sd", width = 0.3)
 
+1. Verificando Dados Faltantes
+Para identificar a presença de dados faltantes (NA) em um data frame, utilize as seguintes funções:
+
+is.na(): Verifica se cada elemento é NA.
+
+r
+Copiar
+Editar
+is.na(df)  # Retorna um data frame lógico indicando a presença de NAs
+sum(is.na()): Conta o número total de valores NA no data frame.
+
+r
+Copiar
+Editar
+sum(is.na(df))  # Número total de NAs
+colSums(is.na()): Conta os valores NA por coluna.
+
+r
+Copiar
+Editar
+colSums(is.na(df))  # NAs por coluna
+complete.cases(): Identifica linhas sem dados faltantes.
+
+r
+Copiar
+Editar
+complete.cases(df)  # Retorna um vetor lógico
+2. Limpando Dados Faltantes
+Após identificar os dados faltantes, é possível tratá-los de diversas maneiras:
+
+Remover Linhas com Dados Faltantes:
+
+r
+Copiar
+Editar
+df_limpo <- df[complete.cases(df), ]
+Remover Colunas com Dados Faltantes:
+
+r
+Copiar
+Editar
+df_limpo <- df[, colSums(is.na(df)) == 0]
+Substituir Dados Faltantes por um Valor Específico:
+
+r
+Copiar
+Editar
+df[is.na(df)] <- valor  # Substitui NAs por 'valor'
+Substituir Dados Faltantes por Média ou Mediana:
+
+r
+Copiar
+Editar
+df$coluna[is.na(df$coluna)] <- mean(df$coluna, na.rm = TRUE)
+# ou
+df$coluna[is.na(df$coluna)] <- median(df$coluna, na.rm = TRUE)
+Usando o Pacote dplyr para Substituição:
+
+r
+Copiar
+Editar
+library(dplyr)
+df <- df %>%
+  mutate(coluna = ifelse(is.na(coluna), valor_substituto, coluna))
+
+
 
 
 
