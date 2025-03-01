@@ -14,6 +14,26 @@ if(!require(lubridate)){install.packages("lubridatee")}
 if(!require(ipeadatar)){install.packages("ipeadatar")}
 if(!require(sidrar)){install.packages("sidrar")}
 if(!require(GetBCBData)){install.packages("GeetBCBData")}
+if(!require(dygraphs)){install.packages("dygraphs")}
+if(!require(tseries)){install.packages("tseries")}
+if(!require(quantmod)){install.packages("quantmod")}
+if(!require(Quandl)){install.packages("Quandl")}
+if(!require(discreteRV)){install.packages("discreteRV")}
+if(!require(aTSA)){install.packages("aTSA")}
+if(!require(fGarch)){install.packages("fGarch")}
+if(!require(fUnitRoots)){install.packages("fUnitRoots")}
+if(!require(vars)){install.packages("vars")}
+if(!require(MTS)){install.packages("MTS")}
+if(!require(seasonal)){install.packages("seasonal")}
+if(!require(stats)){install.packages("stats")}
+if(!require(nortest)){install.packages("nortest")}
+if(!require(scales)){install.packages("scales")}
+if(!require(urca)){install.packages("urca")}
+if(!require(dlm)){install.packages("dlm")}
+if(!require(seasonalview)){install.packages("seasonalview")}
+if(!require(stringr)){install.packages("stringr")}
+if(!require(fma)){install.packages("fma")}
+if(!require(PerformanceAnalytics)){install.packages("PerformanceAnalytics")}
 
 # If it doesn't work remove the packages, run this code
 remove.packages("dplyr")
