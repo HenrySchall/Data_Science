@@ -1,3 +1,26 @@
+## R Language
+- Download R: https://cran.r-project.org/bin/windows/base/
+- Comunidade: https://rpubs.com/
+
+> R is an open-source programming language for statistical computing, widely used in data analysis. The language was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, in the early 1990s. They were motivated by the desire to develop a programming language that was powerful for statistical analysis and at the same time accessible and flexible.
+
+### Setting up R for use in Visual Studio Code
+
+```
+# Run in the R terminal
+install.packages("languageserver")
+install.packages("httpgd")
+```
+
+```
+# Preferences (Open User Settings (JSON)
+"editor.quickSuggestions.other": false
+r.lsp.diagnostics": false
+"r.plot.useHttpgd": true
+```
+
+### Introdução 
+
 ##################
 #### Ggplot2 #####
 ##################
