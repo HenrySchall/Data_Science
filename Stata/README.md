@@ -212,8 +212,8 @@ label values x x
 ### Practical Demonstration
 > The example and the database are taken from the book: "*Econometric Analysis of Cross Section and Panel Data, Second Edition, by Jeffrey M. Wooldridge*"
 
-Carregar Base -> health.dta
-
+health.dta
+- Download -> https://drive.google.com/uc?export=download&id=
 ```
 sum
 ```
