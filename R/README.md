@@ -2,7 +2,7 @@
 - Download R: https://cran.r-project.org/bin/windows/base/
 - Comunidade: https://rpubs.com/
 
-> R is an open-source programming language for statistical computing, widely used in data analysis. The language was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, in the early 1990s. They were motivated by the desire to develop a programming language that was powerful for statistical analysis and at the same time accessible and flexible
+> R is an open-source programming language for statistical computing, widely used in data analysis. The language was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, in the early 1990s. They were motivated by the desire to develop a programming language that was powerful for statistical analysis and at the same time accessible and flexible.
 
 ### Setting up R for use in Visual Studio Code
 
@@ -24,36 +24,72 @@ r.lsp.diagnostics": false
 #### Operadores Matemáticos 
 
 ```
-5 + 3 # Soma
-8 - 6 # Subtração
-4 * 3 # Multiplicação
-20 / 5 # Divisão
-4 ** 2 ou 4 ^ 2 # Potenciação
-sqrt (81) ou 81**(1/2) # Radiciação (quadrada)
-125**(1/3) # Radiciação Cúbica
-abs (-10) # Módulo
-factorial(3) # Fatorial
-exp(1) # Exponencial
-log(2.718281828) # Logatimo natural
-log2(8) ou 2^3 = 8 # Logaritmo 
+# Soma
+5 + 3
+
+# Subtração
+8 - 6
+
+# Multiplicação
+4 * 3
+
+# Divisão
+20 / 5
+
+# Potenciação
+4 ** 2 ou 4 ^ 2
+
+# Radiciação (quadrada)
+sqrt (81) ou 81**(1/2)
+
+ # Radiciação Cúbica
+125**(1/3)
+
+# Módulo
+abs (-10)
+
+# Fatorial
+factorial(3)
+
+# Exponencial
+exp(1)
+
+# Logatimo natural
+log(2.718281828)
+
+# Logaritmo
+log2(8) ou 2^3 = 8
+
+# Notação científica
+2e32 # (2x10^32)
+2e3 # (2x10^3)
+2e-26 # (2x10^-26)
+2e5 + 4e5 # (2x10^5 + 2x10^4)
+3e20 * 2e12 # (3x10^20 * 2x10^12)
+15e16 / 5e6 # (15x10^16 / 5x10^6)
+
 ```
 
-### Basic Commands
+#### Variáveis
+```
+resultado <- 4 * 7
+print(resultado)
 
-#########################
-## ESTRUTURA DOS DADOS ## 
-#########################
+flores vermelhas <- 5
+flores laranjas  <- 6
+boque <- flores laranjas + flores vermelhas
+print(boque)
+```
 
-#class
-#table
-#summary 
-#labels
-#levels
+#### Estrutura do Dados
 
-escolaridade <- c("fundamental", "médio", "superior") 
-print(escolaridade)
-class(escolaridade)
+- class
+- table
+- summary 
+- labels
+- levels
 
+```
 #Determinando a posição de cada fator
 posicao <- escolaridade[2]
 posicao
@@ -100,226 +136,50 @@ summary(tensao_casas_fator)
 
 factor_temperature_vector <- factor(tensao_casas, levels = c("110", "220"), labels = c("Baixo","Alto"), order = T)
 factor_temperature_vector
-
-
-
-
-
-```
-resultado <- 4 * 7
-print(resultado)
 ```
 
-```
-flores vermelhas <- 5
-flores laranjas  <- 6
-boque <- flores laranjas + flores vermelhas
-print(boque)
-```
+#### Tipo Básico do Objeto
 
+- numeric: numérico
+- integer: inteiro
+- complex: número complexo
+- character (string): caractere
+- logical (boolean): lógicos (True e False)
+- factor: categorias bem definidas. gênero(masculino e feminino)
 
-### Operadores Matemáticos
 ```
-5 + 3 # Soma
-8 - 6 # Subtração
-4 * 3 # Multiplicação
-20 / 5 # Divisão
-4 ** 2 # Potenciação
-sqrt (81) # Radiciação 
-abs (-10) # Módulo
-factorial(3) # Fatorial
-exp(1) # Exponencial
-log(2.718281828) # Logatimo natural
-log2(8) ou 2^3 = 8 # Logaritmo
-2e3 #(2x10^3) # Notação científica
-```
-
-### BASIC OBJECT TYPE
-
-# numeric: numérico
-# integer: inteiro
-# complex: número complexo
-# character (string): caracterer
-# logical (boolean): lógicos (True e False)
-# factor: categorias bem definidas. ex: gênero(masculino e feminino)
-# stado civil(casado, solteiro, viúvo...), ano(2019, 2020, 2021...)
-
-- Identificando variável
-```
+# Identificando variável
 x = 2
 class(x)
-```
-- Convertendo variável
-```
+
+# Declarar variáveis como string (texto)
+str(x)
+
+# Convertendo variável
 x <- as.integer(x)
 class(x)
-```
 
 genero <- c("masculino","feminino")
 genero
 class(genero)
+
 genero <- as.factor(genero)
 class(genero)
 
-```
-- Comprimento Variável
-length(genero) #possui dois fatores
-length(x) #possui apenas um fator
-```
-```
+# Comprimento Variável
+length(genero) # possui dois fatores
+length(x) # possui apenas um fator
+
 q <- "bom dia" 
 length(q)
-```
-```
+
 u <- c("1","2","3")
 length(u)
 ```
 
-### Estatística
+#### Dataframes
 
-### Álgebra Linear 
-# Tópicos
-# - Sistemas de Equações Lineares.
-# - Vetores = Representação matemática de uma grandeza vetorial (Módulo, Direção e Sentido)
-# - Matrizes
-# - Determinantes
-# - Espaços vetoriais
-# - Transformações lineares
-# - Autovalores e Autovetores
-
-# Grandezas
-# - Escalar = Só necessita do seu valor para representar a grandeza (Tempo, Massa, Temperatura)
-# - Vetorial = Necessita de módulo, direção e sentindo (Força, Velocidade, Aceleração)
-
-#############
-## VETORES ##
-#############
-
-#Criando um vetor
-vetor <- c(1,2,3,4,5,6,7)
-class(vetor)
-
-dias <- c("segunda", "terca", "quarta", "quinta", "sexta", "sábado", "domingo")
-class(dias)
-
-#Juntando os dois vetores
-juntando <- c(vetor, dias)
-juntando
-class(juntando)
-length(juntando) #tamanho
-
-#Colocando em ordem crescente
-gastos_dia <- c(300, 400, 5000, 150, 250)
-ordem_crescente <- sort(gastos_dia)
-ordem_crescente
-
-#Soma dos valores do vetor
-total <- sum(gastos_dia) 
-total
-
-#Mínimo
-minimo <- min(gastos_dia)
-min(gastos_dia)
-
-#Máximo
-max(gastos_dia)
-maximo <- max(gastos_dia)
-
-#Média
-media <- mean(gastos_dia)
-mean(gastos_dia)
-
-#Limite
-limite <- (gastos_dia <= 300)
-limite
-
-#Intervalo
-intervalo <- (3:8)
-intervalo
-
-#Sequência
-passo <- seq(2,48,by=5)
-passo
-
-#Repetição
-repeticao <- rep(2,8)
-repeticao
-
-#Repetição Multipla
-repeticao_multipla <- rep(c(3,5),c(4,6))
-repeticao_multipla
-
-#Repetição Programada
-repeticao_programada <- rep(3:5, each = 3)
-repeticao_programada
-
-repeticao_programada_2 <- rep(3:6,3)
-repeticao_programada_2
-
-##########################
-## OPERAÇÕES DE VETORES ##
-##########################
-
-u <- c(2,-4,1)
-print(u)
-
-v <- c(3,2,-5)
-print(v)
-
-#Soma
-soma <- u + v
-soma
-
-#Produto
-produto <- u * v
-produto
-
-#Produto Interno (soma do produto)
-produto_interno <- u %*% v
-produto_interno
-
-#Multiplicação Escalar
-multiplicacao <- 5*u
-multiplicacao
-
-multiplicacao2 <- 3*v
-multiplicacao2
-
-produto_interno <- (5*u) %*% (3*v)
-produto_interno 
-
-#Norma
-norm(u, type="2")
-norm(v, type="2")
-
-w = c(2,4,6,8,10,12)
-norm(w, type="2")
-round(norm(w, type="2"),3) #forma resumida
-
-#Distância
-# Criando Função Distância
-dist <- function (vetor1, vetor2) {
-  soma_quad = 0
-  for (i in 1:length(vetor1)){
-    soma_quad = soma_quad+(vetor1[i] - vetor2[i])**2}
-  dist = soma_quad**(1/2)
-}
-
-# Calculando a distância entre vetores
-distancia <- dist(u,v)
-print(paste0("A distância entre os vetores: ", round(distancia, 2)))
-
-
-#######################################################
-###    ESTRUTURA DOS DADOS - LISTAS E DATA FRAME    ###
-#######################################################
-
-### DATA FRAME ###
-
-# � uma tabela de dados onde cada linha representa um registro e as colunas
-# representam os atributos ou vari�veis.
-# Pode ter n�meros e caracteres juntos (essa � a principal diferen�a com rela��o � matriz).
-
+```
 mes_numero <- c(1,2,3,4,5,6,7,8,9,10,11,12)
 mes_nome <- c("janeiro","fevereiro","mar�o","abril","maio","junho","julho",
               "agosto","setembro","outubro","novembro","dezembro")
@@ -335,75 +195,47 @@ df2
 
 ?airquality
 ?datasets
-library(help = "datasets")
+help (datasets)
 
-df3 = iris
-df3
+nrow(df2)
+ncol(df2)
+dim(df2)
+summary(df2)
+```
 
-nrow(df3)
-ncol(df3)
-dim(df3)
-summary(df3)
+#### Listas
 
-
-### LISTAS ###
-
-# Podem conter elementos de diferentes tipos (tipo especial de vetor)
-
+```
 nome <- c("Luciano","Pedro","Joyce", "Maria")
 idade <- c(46, 38, 27, 29)
-curso <- c("Estat�stica", "Linguagem R", "Redes Neurais", "Python")
+curso <- c("Matemática", "Linguagem R", "Redes Neurais", "Python")
 lista <- list(nome, idade, curso)
 print(lista)
 
-# objeto da lista, basta colocar entre colchetes.
+# Objeto da lista, basta colocar entre colchetes.
 lista[1]
+```
 
-# nomeando termos da lista
-lista2 <- list(nome = c("Luciano","Pedro","Joyce", "Maria"),
-idade = c(46, 38, 27, 29), curso = c("Estat�stica","Linguagem R","Redes Neurais","Python"))
-lista2
+#### Estrutura Condicional If e Else
 
-lista2[3]
-
-###############################################
-###    ESTRUTURA CONDICIONAL - if e else    ###
-###############################################
-
-
+```
 x <- 10
-if (x < 10) {
-  print("x � menor que 10!")
-} else {
-  print("x � maior ou igual a 10")
-}
-
-
-
-
-y <- 21
-if (y < 20) {print("y � menor que 20!")
-} else if (y == 20){
-  print("y � igual a 20")
-} else {
-  print("y � maior que 20")
-}
-
-
-
-w <- 13
-ifelse(w %% 2 == 0, "par", "impar")
-
-
+if (x < 10)
+  {print("x é menor que 10!")}
+else
+  {print("x é maior ou igual a 10")}
 
 nota <- 4.5
-if (nota >= 6){
-  print('Aprovado')
-} else if (nota >= 5 & nota< 6){
-  print('Recupera��o')
-} else {
-  print('Reprovado')
-}
+if (nota >= 6)
+  {print('Aprovado')}
+else if (nota >= 5 & nota< 6){
+  print('Recuperação')}
+else
+  {print('Reprovado')}
+```
+#### Funções 
+
+
 
 #####################
 ###    FUN��ES    ###
