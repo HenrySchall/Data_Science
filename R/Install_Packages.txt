@@ -1,6 +1,7 @@
 # Instalando pacotes
 
 if(!require(dplyr)){install.packages("dplyr")}
+if(!require(sidrar)){install.packages("sidrar")}
 if(!require(rio)){install.packages("rio")}
 if(!require(tidyverse)){install.packages("tidyverse")}
 if(!require(TeachingDemos)){install.packages("TeachingDemos")}
