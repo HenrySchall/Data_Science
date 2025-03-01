@@ -22,7 +22,7 @@ Quantitative (numerical attributes).
 
 ## Datasets
 
-### Main Brazilian Indicators
+### Brazilian Indicators
 
 #### FGV IBRE
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
@@ -67,6 +67,15 @@ Quantitative (numerical attributes).
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - Portal da Indústria (Confederação Nacional da Indústria)
 
+### Global Indicators
+Índice de Desenvolvimento Humano (IDH)
+Índice de Gini
+
+#### Principais Agências/Institutos Nacionais
+- National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
+- AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
+- O Conference Board Leading Economic Index é um indicador econômico norte-americano destinado a prever a atividade econômica futura. É calculado pelo The Conference Board, uma organização não governamental, que determina o valor do índice a partir dos valores de dez variáveis-chave.
+
 #### Links
 https://basedosdados.org/#theme
 
@@ -79,16 +88,6 @@ https://www.ibge.gov.br/
 https://www.portaldefinancas.com/
 
 https://www.seade.gov.br/
-
-### Principais Indicadores Globais 
-Índice de Desenvolvimento Humano (IDH)
-Índice de Gini
-
-#### Principais Agências/Institutos Nacionais
-- National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
-- AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
-
-#### Links
 https://www.iea.org/
 
 https://data.nasdaq.com/
@@ -98,5 +97,3 @@ https://www.indexmundi.com/
 https://fred.stlouisfed.org/
 
 https://www.statista.com/
-
-O Conference Board Leading Economic Index é um indicador econômico norte-americano destinado a prever a atividade econômica futura. É calculado pelo The Conference Board, uma organização não governamental, que determina o valor do índice a partir dos valores de dez variáveis-chave.
