@@ -2,7 +2,7 @@
 - Download R: https://cran.r-project.org/bin/windows/base/
 - Comunidade: https://rpubs.com/
 
-> R is an open-source programming language for statistical computing, widely used in data analysis. The language was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, in the early 1990s. They were motivated by the desire to develop a programming language that was powerful for statistical analysis and at the same time accessible and flexible, as a free alternative to the S language
+> R is an open-source programming language for statistical computing, widely used in data analysis. The language was created by Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, in the early 1990s. They were motivated by the desire to develop a programming language that was powerful for statistical analysis and at the same time accessible and flexible
 
 ### Setting up R for use in Visual Studio Code
 
