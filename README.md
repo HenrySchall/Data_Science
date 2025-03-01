@@ -1,6 +1,17 @@
 # Data Science
 ![415865341-13ebbab0-76d3-482a-a0cb-2fdc55abed9f](https://github.com/user-attachments/assets/f93fdc0d-5d9a-4406-b9ca-dc4d2ca48452)
 
+> 
+
+### Data Types
+Qualitative (non-numeric attributes).
+- Nominal: Denominations (colors, gender, race, titles, etc.)
+- Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
+
+Quantitative (numerical attributes).
+- Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
+- Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
+
 ## Bases de Dados
 
 ### Principais Indicadores Brasileiros
@@ -39,14 +50,14 @@
 - Pesquisa de Orçamentos Familiares (POF)
 
 #### Agências/Institutos Nacionais
-Conab (Companhia Nacional de Abastecimento)
-Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
-ABRAS (Associação Brasileira de Supermercados)
-Embrapa (Empresa Brasileira de Pesquisa Agropecuária)
-ABPA (Associação Brasileira de Proteína Animal)
-FIESP (Federação das Indústrias do Estado de São Paulo)
-CNA (Confederação da Agricultura e Pecuária do Brasil)
-Portal da Indústria (Confederação Nacional da Indústria)
+- Conab (Companhia Nacional de Abastecimento)
+- Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
+- ABRAS (Associação Brasileira de Supermercados)
+- Embrapa (Empresa Brasileira de Pesquisa Agropecuária)
+- ABPA (Associação Brasileira de Proteína Animal)
+- FIESP (Federação das Indústrias do Estado de São Paulo)
+- CNA (Confederação da Agricultura e Pecuária do Brasil)
+- Portal da Indústria (Confederação Nacional da Indústria)
 
 #### Links
 https://basedosdados.org/#theme
