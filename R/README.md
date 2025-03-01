@@ -1,4 +1,4 @@
-## Introdução
+## R Language
 - Download R: https://cran.r-project.org/bin/windows/base/
 - Comunidade: https://rpubs.com/
 
@@ -6,26 +6,37 @@
 
 ### Setting up R for use in Visual Studio Code
 
-```r
+```
 # Run in the R terminal
 install.packages("languageserver")
 install.packages("httpgd")
 ```
 
-```r
+```
 # Preferences (Open User Settings (JSON)
 "editor.quickSuggestions.other": false
 r.lsp.diagnostics": false
 "r.plot.useHttpgd": true
 ```
-### Data Types
-Qualitative (non-numeric attributes).
-- Nominal: Denominations (colors, gender, race, titles, etc.)
-- Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
 
-Quantitative (numerical attributes).
-- Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
-- Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
+### Introdução 
+
+#### Operadores Matemáticos 
+
+```
+5 + 3 # Soma
+8 - 6 # Subtração
+4 * 3 # Multiplicação
+20 / 5 # Divisão
+4 ** 2 ou 4 ^ 2 # Potenciação
+sqrt (81) ou 81**(1/2) # Radiciação (quadrada)
+125**(1/3) # Radiciação Cúbica
+abs (-10) # Módulo
+factorial(3) # Fatorial
+exp(1) # Exponencial
+log(2.718281828) # Logatimo natural
+log2(8) ou 2^3 = 8 # Logaritmo 
+```
 
 ### Basic Commands
 
