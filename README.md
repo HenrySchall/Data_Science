@@ -1,9 +1,17 @@
 # Data Science
 ![415865341-13ebbab0-76d3-482a-a0cb-2fdc55abed9f](https://github.com/user-attachments/assets/f93fdc0d-5d9a-4406-b9ca-dc4d2ca48452)
 
-> 
+> Ciência de dados é uma área interdisciplinar que utiliza métodos, algoritmos, processos e sistemas para extrair conhecimento e insights a partir de dados estruturados e não estruturados. Ela envolve uma combinação de estatísticas, aprendizado de máquina, análise de dados, computação e conhecimentos do domínio específico para resolver problemas e tomar decisões baseadas em dados.
 
-### Data Types
+As principais atividades da ciência de dados incluem: 
+- Coleta e armazenamento de dados: Obter dados relevantes e armazená-los de maneira eficiente.
+- Limpeza e pré-processamento: Preparar os dados para análise, corrigindo erros e lidando com dados faltantes.
+- Análise exploratória: Investigar os dados para identificar padrões, tendências e relações.
+- Modelagem e aprendizado de máquina: Aplicar algoritmos para construir modelos preditivos ou classificatórios.
+- Visualização de dados: Criar gráficos e dashboards para comunicar os insights de maneira clara e acessível.
+- Tomada de decisões baseada em dados: Usar os resultados da análise para apoiar decisões empresariais ou de pesquisa.
+
+## Data Types
 Qualitative (non-numeric attributes).
 - Nominal: Denominations (colors, gender, race, titles, etc.)
 - Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
@@ -12,9 +20,9 @@ Quantitative (numerical attributes).
 - Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
 - Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
 
-## Bases de Dados
+## Datasets
 
-### Principais Indicadores Brasileiros
+### Main Brazilian Indicators
 
 #### FGV IBRE
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
@@ -27,7 +35,7 @@ Quantitative (numerical attributes).
 - Índice de Preços ao Consumidor Classe 2 (IPC-C2): Refere-se à variação de preços para famílias com renda entre 2,5 e 5 salários mínimos.
 - Índice de Preços ao Consumidor Classe 3 (IPC-C3): Refere-se à variação de preços para famílias com renda acima de 5 salários mínimos.
   
-#### IPEA
+#### IPEA (Instituto de Pesquisa Econômica Aplicada)
 - Produto Interno Bruto (PIB)
 - Índice de Preços ao Consumidor (IPC)
 - Taxa de Desemprego
@@ -37,7 +45,7 @@ Quantitative (numerical attributes).
 - Indicador de Inflação por Faixa de Renda
 - Taxa de Desocupação (TD)
 
-#### IBGE
+#### IBGE (Instituto Brasileiro de Geografia e Estatística)
 - Pesquisa Anual de Comércio (PAC)
 - Índice de Preços ao Consumidor Amplo (IPCA)
 - Pesquisa Anual de Serviços (PAS)
