@@ -14,6 +14,8 @@ if(!require(lubridate)){install.packages("lubridatee")}
 if(!require(ipeadatar)){install.packages("ipeadatar")}
 if(!require(sidrar)){install.packages("sidrar")}
 if(!require(GetBCBData)){install.packages("GeetBCBData")}
+if(!require(PNADcIBGE)){install.packages("PNADcIBGE")}
+if(!require(survey)){install.packages("survey")}
 if(!require(dygraphs)){install.packages("dygraphs")}
 if(!require(tseries)){install.packages("tseries")}
 if(!require(quantmod)){install.packages("quantmod")}
