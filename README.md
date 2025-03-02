@@ -88,6 +88,9 @@ https://www.ibge.gov.br/
 https://www.portaldefinancas.com/
 
 https://www.seade.gov.br/
+
+https://data.gov/
+
 https://www.iea.org/
 
 https://data.nasdaq.com/
