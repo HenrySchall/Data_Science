@@ -1,5 +1,7 @@
 if(!require(magrittr)){install.packages("magrittr")}
 
+if(!require(httpgd)){install.packages("httpgd")}
+
 if(!require(rio)){install.packages("rio")}
 
 if(!require(timetk)){install.packages("timetk")}
