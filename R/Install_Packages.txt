@@ -82,5 +82,8 @@ if(!require(fma)){install.packages("fma")}
 
 if(!require(PerformanceAnalytics)){install.packages("PerformanceAnalytics")}
 
-# If it doesn't work remove the packages and install again, run this code
+################################################################
+### If it doesn't work remove the packages and install again ###
+################################################################
+
 remove.packages("dplyr")
