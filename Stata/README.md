@@ -6,15 +6,6 @@
   
 > Stata is a statistical software created by the company StataCorp, headquartered in College Station, Texas, USA. It was initially developed in 1985 by William Gould, the company's founder, who sought to create software with simple navigation to analyze statistical data. Unlike its more popular open source competitors, such as Python and R, Stata is a close source software, It this mean that, all updates performed by the controlling company, not allowing users to download or create content to the software.
 
-### Data Types
-Qualitative (non-numeric attributes).
-- Nominal: Denominations (colors, gender, race, titles, etc.)
-- Ordinal: attributes that can be classified (e.g., rating of most-watched movies, level of education, level of satisfaction, etc.).
-
-Quantitative (numerical attributes).
-- Discrete: finite or enumerable values ​​(number of people in a room, number of cars in a parking lot, etc.)
-- Continuous: infinite possible values ​​in an interval (income, time, height, etc.).
-
 ### Doedit
 > In Stata, you can create a file called doedit, with the extension .do. These files are scripts that can store commands typed into Stata in text format, as if it were a notepad. They help automate data analysis by allowing users to execute a series of commands in a sequential and repeatable manner.
 
