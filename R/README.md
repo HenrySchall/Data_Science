@@ -15,7 +15,7 @@ install.packages("httpgd")
 ```
 # Preferences (Open User Settings (JSON)
 "editor.quickSuggestions.other": false
-r.lsp.diagnostics": false
+"r.lsp.diagnostics": false
 "r.plot.useHttpgd": true
 ```
 

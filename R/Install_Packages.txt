@@ -2,6 +2,8 @@ if(!require(magrittr)){install.packages("magrittr")}
 
 if(!require(httpgd)){install.packages("httpgd")}
 
+if(!require(mFilter)){install.packages("mFilter")}
+
 if(!require(BCDating)){install.packages("BCDating")}
 
 if(!require(rio)){install.packages("rio")}
