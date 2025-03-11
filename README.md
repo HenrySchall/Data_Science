@@ -57,7 +57,7 @@ Quantitative (numerical attributes).
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
-#### Agências Nacionais
+#### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
 - ABRAS (Associação Brasileira de Supermercados)
@@ -68,11 +68,11 @@ Quantitative (numerical attributes).
 - Portal da Indústria (Confederação Nacional da Indústria)
 
 ### Main Global Indicators Main
-Índice de Desenvolvimento Humano (IDH)
-Índice de Gini
-Conference Board Leading Economic Index
+- Índice de Desenvolvimento Humano (IDH)
+- Índice de Gini
+- Conference Board Leading Economic Index
 
-#### Principais Agências/Institutos Nacionais
+#### National Agencies
 - National Agricultural Library
 - AGRIS (International System for Agricultural Science and Technology)
 
