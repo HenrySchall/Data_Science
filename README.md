@@ -111,6 +111,12 @@ R: (BETS)
 Python: Sem Pacote 
 ```
 
+8) Portal de Dados Abertos = https://dados.gov.br/home
+
+```
+Sem Pacotes Disponiveis
+```
+
 #### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
@@ -120,6 +126,7 @@ Python: Sem Pacote
 - FIESP (Federação das Indústrias do Estado de São Paulo)
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - Portal da Indústria (Confederação Nacional da Indústria)
+- Agência Nacional de Mineração
 
 ### Main Global Indicators Main
 - Conference Board Leading Economic Index
@@ -148,7 +155,7 @@ Python: (imfpy)
 ```
 Pacotes Disponiveis
 R: (WDI)
-Python: ()
+Python: (wbgapi)
 ```
 
 4) DBnomics = https://db.nomics.world/
@@ -159,13 +166,33 @@ R: (rdbnomics)
 Python: (dbnomics)
 ```
 
-https://data.gov/
+5) Data United States Governemnt = https://data.gov/
 
-https://www.iea.org/
+```
+Pacotes Disponiveis
+R: (datagov)
+Python: (datagov)
+```
 
-https://data.nasdaq.com/
+6) International Energy Agency (IEA) = https://www.iea.org/
+
+```
+Sem Pacotes Disponiveis
+```
+
+7) NASDAQ = https://data.nasdaq.com/
+
+```
+Packages Available
+R: (quantmod)
+Python: Sem Pacotes
+```
 
 https://www.indexmundi.com/
+
+```
+No Packages Available
+```
 
 https://fred.stlouisfed.org/
 
