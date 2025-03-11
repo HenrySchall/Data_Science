@@ -1,15 +1,15 @@
 # Data Science
 ![415865341-13ebbab0-76d3-482a-a0cb-2fdc55abed9f](https://github.com/user-attachments/assets/f93fdc0d-5d9a-4406-b9ca-dc4d2ca48452)
 
-> Ciência de dados é uma área interdisciplinar que utiliza métodos, algoritmos, processos e sistemas para extrair conhecimento e insights a partir de dados estruturados e não estruturados. Ela envolve uma combinação de estatísticas, aprendizado de máquina, análise de dados, computação e conhecimentos do domínio específico para resolver problemas e tomar decisões baseadas em dados.
+> Data science is an interdisciplinary field that uses methods, algorithms, processes, and systems to extract knowledge and insights from structured and unstructured data. It involves a combination of statistics, machine learning, data analysis, computing, and domain-specific knowledge to solve problems and make data-driven decisions.
 
-As principais atividades da ciência de dados incluem: 
-- Coleta e armazenamento de dados: Obter dados relevantes e armazená-los de maneira eficiente.
-- Limpeza e pré-processamento: Preparar os dados para análise, corrigindo erros e lidando com dados faltantes.
-- Análise exploratória: Investigar os dados para identificar padrões, tendências e relações.
-- Modelagem e aprendizado de máquina: Aplicar algoritmos para construir modelos preditivos ou classificatórios.
-- Visualização de dados: Criar gráficos e dashboards para comunicar os insights de maneira clara e acessível.
-- Tomada de decisões baseada em dados: Usar os resultados da análise para apoiar decisões empresariais ou de pesquisa.
+Key data science activities include:
+- Data collection and warehousing: Obtaining relevant data and storing it efficiently.
+- Data cleaning and preprocessing: Preparing data for analysis by correcting errors and dealing with missing data.
+- Exploratory analysis: Investigating data to identify patterns, trends, and relationships.
+- Modeling and machine learning: Applying algorithms to build predictive or classification models.
+- Data visualization: Creating charts and dashboards to communicate insights in a clear and accessible way.
+- Data-driven decision making: Using the results of analysis to support business or research decisions.
 
 ## Data Types
 Qualitative (non-numeric attributes).
@@ -22,7 +22,7 @@ Quantitative (numerical attributes).
 
 ## Datasets
 
-### Brazilian Indicators
+### Main Brazilian Indicators
 
 #### FGV IBRE
 - Índice de Preços ao Consumidor (IPC) = Mede a variação de preços de uma cesta de bens e serviços consumidos pelas famílias.
@@ -57,7 +57,7 @@ Quantitative (numerical attributes).
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
-#### Agências/Institutos Nacionais
+#### Agências Nacionais
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
 - ABRAS (Associação Brasileira de Supermercados)
@@ -67,14 +67,14 @@ Quantitative (numerical attributes).
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - Portal da Indústria (Confederação Nacional da Indústria)
 
-### Global Indicators
+### Main Global Indicators Main
 Índice de Desenvolvimento Humano (IDH)
 Índice de Gini
+Conference Board Leading Economic Index
 
 #### Principais Agências/Institutos Nacionais
-- National Agricultural Library = Biblioteca do Departamento de Agricultura dos Estados Unidos com mais de 3,5 milhões de títulos sobre agricultura e ciências relacionadas
+- National Agricultural Library
 - AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
-- O Conference Board Leading Economic Index é um indicador econômico norte-americano destinado a prever a atividade econômica futura. É calculado pelo The Conference Board, uma organização não governamental, que determina o valor do índice a partir dos valores de dez variáveis-chave.
 
 #### Links
 https://basedosdados.org/#theme
