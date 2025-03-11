@@ -137,7 +137,7 @@ Sem Pacotes Disponiveis
 1) Organization for Economic Cooperation and Development (OCDE) = https://stats.oecd.org/
    
 ```
-Pacotes Disponiveis
+Packages Available
 R: (OECD)
 Python: (pandasdmx)
 ```
@@ -145,7 +145,7 @@ Python: (pandasdmx)
 2) International Monetary Fund (IMF) = https://data.imf.org/
 
 ```
-Pacotes Disponiveis - Recomenda-se usar o pacote da DBnomics 
+Packages Available (Recommended use the DBnomics package)
 R: (imfr)
 Python: (imfpy)
 ```
@@ -153,7 +153,7 @@ Python: (imfpy)
 3) World Bank = https://data.worldbank.org/
 
 ```
-Pacotes Disponiveis
+Packages Available
 R: (WDI)
 Python: (wbgapi)
 ```
@@ -161,7 +161,7 @@ Python: (wbgapi)
 4) DBnomics = https://db.nomics.world/
 
 ```
-Pacotes Disponiveis
+Packages Available
 R: (rdbnomics)
 Python: (dbnomics)
 ```
@@ -169,7 +169,7 @@ Python: (dbnomics)
 5) Data United States Governemnt = https://data.gov/
 
 ```
-Pacotes Disponiveis
+Packages Available
 R: (datagov)
 Python: (datagov)
 ```
@@ -177,7 +177,7 @@ Python: (datagov)
 6) International Energy Agency (IEA) = https://www.iea.org/
 
 ```
-Sem Pacotes Disponiveis
+No Packages Available
 ```
 
 7) NASDAQ = https://data.nasdaq.com/
@@ -188,15 +188,25 @@ R: (quantmod)
 Python: Sem Pacotes
 ```
 
-https://www.indexmundi.com/
+8) Index Mundi = https://www.indexmundi.com/
 
 ```
 No Packages Available
 ```
 
-https://fred.stlouisfed.org/
+9) Federal Reserve bank of St. Louis = https://fred.stlouisfed.org/
 
-https://www.statista.com/
+```
+Packages Available
+R: (fredr)
+Python: (fredapi)
+```
+
+10) Statista = https://www.statista.com/
+
+```
+No Packages Available
+```
 
 #### National Agencies
 - National Agricultural Library
