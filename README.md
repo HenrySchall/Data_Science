@@ -53,6 +53,7 @@ Quantitative (numerical attributes).
 - Pesquisa Industrial Anual (PIA)
 - Pesquisa Mensal de Serviços (PMS)
 - Pesquisa Mensal de Comércio (PMC)
+- Pesquisa de Produção de Ovos de Galinha (POG)
 - Pesquisa Industrial Mensal (PIM-PF)
 - Pesquisa Trimestral do Leite (PTL)
 - Pesquisa Agrícola Pessoal (PAP)
@@ -142,14 +143,30 @@ R: (rINPE)
 Python: Sem Pacotes
 ```
 
-#### National Agencies
+12) Economática = https://www.economatica.com/
+
+```
+Sem Pacotes Disponiveis
+```
+
+13) Relação Anual de Informações Sociais - RAIS (Ministério do Trabalho e Emprego)
+
+```
+Sem Pacotes Disponiveis
+```
+
+#### Research Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
 - ABRAS (Associação Brasileira de Supermercados)
+- CNT (Confederação Nacional do Transporte)
 - Embrapa (Empresa Brasileira de Pesquisa Agropecuária)
 - ABPA (Associação Brasileira de Proteína Animal)
 - FIESP (Federação das Indústrias do Estado de São Paulo)
+- CEPEA (Centro de Estudos Avançados em Economia Aplicada)
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
+- ANS (Agencia Nacional de Saúde Suplementar)
+- DIEESE (Departamento Intersindical de Estatísticas e Estudos Socioeconômicos)
 - Portal da Indústria (Confederação Nacional da Indústria)
 - Agência Nacional de Mineração
 
@@ -249,8 +266,17 @@ R: (eikon)
 Python: (eikon)
 ```
 
+13) AgEcon Search = https://ageconsearch.umn.edu/
 
-#### National Agencies
+```
+Packages Available
+R: (agecon)
+Python: (agecon)
+```
+
+#### Research Agencies
 - National Agricultural Library
 - AGRIS (International System for Agricultural Science and Technology)
 - U.S. Department of Agriculture (USDA)
+
+https://www18.fgv.br/corp/estantebasesdedados/biblioteca/estante
