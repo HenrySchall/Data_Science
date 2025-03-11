@@ -74,7 +74,7 @@ Conference Board Leading Economic Index
 
 #### Principais Agências/Institutos Nacionais
 - National Agricultural Library
-- AGRIS - International System for Agricultural Science and Technology = Banco de dados online mantido pela Food and Agriculture Organization – FAO com mais de 9 milhões de fontes bibliográficas sobre ciência e tecnologia agrícola
+- AGRIS (International System for Agricultural Science and Technology)
 
 #### Links
 https://basedosdados.org/#theme
