@@ -57,6 +57,52 @@ Quantitative (numerical attributes).
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
+### Links for Datasets
+1) Banco Central do Brasil (BCB) 
+- Sistema Gerenciador de Séries Temporais (SGS) = https://www3.bcb.gov.br/sgspub/
+- Sistema Expectativas de Mercado = https://www3.bcb.gov.br/expectativas2/#/consultas
+
+```
+Pacotes Disponiveis
+R: (GetBCBData) e (rbcb)
+Python: (python-bcb)
+```
+
+2) Site Base de Dados = https://basedosdados.org/#theme
+
+```
+Pacotes Disponiveis
+R: (basedosdados)
+Python: (basedosdados)
+```
+
+3) IPEA = http://www.ipeadata.gov.br/Default.aspx
+```
+Pacotes Disponiveis
+R: (ipeadatar)
+Python: (ipeadatapy)
+```
+
+4) SIDRA/IBGE = https://sidra.ibge.gov.br/ 
+
+```
+Pacotes Disponiveis
+R: ()
+Python: ()
+```
+
+5) Sistema Estadual de Análise de Dados (SEADE) = https://www.seade.gov.br/
+
+```
+Sem Pacotes Disponiveis
+```
+
+7) Portal Finanças = https://www.portaldefinancas.com/
+
+```
+Sem Pacotes Disponiveis
+```
+
 #### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
@@ -68,26 +114,11 @@ Quantitative (numerical attributes).
 - Portal da Indústria (Confederação Nacional da Indústria)
 
 ### Main Global Indicators Main
+- Conference Board Leading Economic Index
 - Índice de Desenvolvimento Humano (IDH)
 - Índice de Gini
-- Conference Board Leading Economic Index
 
-#### National Agencies
-- National Agricultural Library
-- AGRIS (International System for Agricultural Science and Technology)
-
-#### Links
-https://basedosdados.org/#theme
-
-https://www3.bcb.gov.br/sgspub/
-
-https://sidra.ibge.gov.br/
-
-https://www.ibge.gov.br/
-
-https://www.portaldefinancas.com/
-
-https://www.seade.gov.br/
+### Links for Datasets
 
 https://data.gov/
 
@@ -100,3 +131,7 @@ https://www.indexmundi.com/
 https://fred.stlouisfed.org/
 
 https://www.statista.com/
+
+#### National Agencies
+- National Agricultural Library
+- AGRIS (International System for Agricultural Science and Technology)
