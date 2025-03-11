@@ -171,7 +171,7 @@ Sem Pacotes Disponiveis
 - Agência Nacional de Mineração
 
 
-### Main Global Indicators Main
+### Main Global Indicators
 - Conference Board Leading Economic Index
 - Human Development Index (HDI)
 - Gini Index
