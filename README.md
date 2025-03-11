@@ -138,19 +138,26 @@ Python: (pandasdmx)
 2) International Monetary Fund (IMF) = https://data.imf.org/
 
 ```
-Pacotes Disponiveis
-R: (imfr) e (rdbnomics)
-Python: (imfpy) e (dbnomics)
+Pacotes Disponiveis - Recomenda-se usar o pacote da DBnomics 
+R: (imfr)
+Python: (imfpy)
 ```
 
-3) World Bank =
+3) World Bank = https://data.worldbank.org/
 
 ```
 Pacotes Disponiveis
 R: (WDI)
-Python: (sidrapy)
+Python: ()
 ```
 
+4) DBnomics = https://db.nomics.world/
+
+```
+Pacotes Disponiveis
+R: (rdbnomics)
+Python: (dbnomics)
+```
 
 https://data.gov/
 
