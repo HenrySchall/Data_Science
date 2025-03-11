@@ -55,6 +55,7 @@ Quantitative (numerical attributes).
 - Pesquisa Mensal de Comércio (PMC)
 - Pesquisa Industrial Mensal (PIM-PF)
 - Pesquisa Trimestral do Leite (PTL)
+- Pesquisa Agrícola Pessoal (PAP)
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
@@ -134,6 +135,13 @@ R: (FAOstat)
 Python: (faostat)
 ```
 
+11) Instituto Nacional de Pesquisas Espaciais (INPE) = https://www.gov.br/inpe/pt-br
+```
+Pacotes Disponiveis
+R: (rINPE)
+Python: Sem Pacotes
+```
+
 #### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
@@ -144,6 +152,7 @@ Python: (faostat)
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - Portal da Indústria (Confederação Nacional da Indústria)
 - Agência Nacional de Mineração
+
 
 ### Main Global Indicators Main
 - Conference Board Leading Economic Index
@@ -232,7 +241,16 @@ No Packages Available
 No Packages Available
 ```
 
+12) London Stock Exchange Group (LSEG) - Antigo Eikon = lseg.com/en
+
+```
+Packages Available
+R: (eikon)
+Python: (eikon)
+```
+
 
 #### National Agencies
 - National Agricultural Library
 - AGRIS (International System for Agricultural Science and Technology)
+- U.S. Department of Agriculture (USDA)
