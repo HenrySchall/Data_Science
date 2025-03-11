@@ -133,7 +133,7 @@ Python: Sem Pacote
 ```
 Pacotes Disponiveis
 R: (OECD)
-Python: (sidrapy)
+Python: (pandasdmx)
 ```
 
 2) International Monetary Fund (IMF) = https://data.imf.org/
@@ -141,7 +141,7 @@ Python: (sidrapy)
 ```
 Pacotes Disponiveis
 R: (imfr) e (rdbnomics)
-Python: (sidrapy)
+Python: (imfpy) e (dbnomics)
 ```
 
 3) World Bank =
