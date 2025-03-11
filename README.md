@@ -87,8 +87,8 @@ Python: (ipeadatapy)
 
 ```
 Pacotes Disponiveis
-R: ()
-Python: ()
+R: (sidrar)
+Python: (sidrapy)
 ```
 
 5) Sistema Estadual de Análise de Dados (SEADE) = https://www.seade.gov.br/
@@ -119,6 +119,30 @@ Sem Pacotes Disponiveis
 - Índice de Gini
 
 ### Links for Datasets
+1) Organization for Economic Cooperation and Development (OCDE) = https://stats.oecd.org/
+   
+```
+Pacotes Disponiveis
+R: (OECD)
+Python: (sidrapy)
+```
+
+2) International Monetary Fund (IMF) = https://data.imf.org/
+
+```
+Pacotes Disponiveis
+R: (imfr) e (rdbnomics)
+Python: (sidrapy)
+```
+
+3) World Bank =
+
+```
+Pacotes Disponiveis
+R: (WDI)
+Python: (sidrapy)
+```
+
 
 https://data.gov/
 
