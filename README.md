@@ -87,8 +87,8 @@ Python: (ipeadatapy)
 
 ```
 Pacotes Disponiveis
-R: (sidrar)
-Python: (sidrapy)
+R: (sidrar) e (ribge)
+Python: (sidrapy) e (pyibge)
 ```
 
 5) Sistema Estadual de Análise de Dados (SEADE) = https://www.seade.gov.br/
@@ -97,11 +97,20 @@ Python: (sidrapy)
 Sem Pacotes Disponiveis
 ```
 
-7) Portal Finanças = https://www.portaldefinancas.com/
+6) Portal Finanças = https://www.portaldefinancas.com/
 
 ```
 Sem Pacotes Disponiveis
 ```
+
+7) FGV IBRE = https://extra-ibre.fgv.br/IBRE/sitefgvdados/default.aspx
+
+```
+Pacotes Disponiveis
+R: (BETS)
+Python: Sem Pacote 
+```
+
 
 #### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
