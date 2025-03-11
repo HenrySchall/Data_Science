@@ -91,7 +91,7 @@ R: (sidrar) e (ribge)
 Python: (sidrapy) e (pyibge)
 ```
 
-5) Sistema Estadual de Análise de Dados (SEADE) = https://www.seade.gov.br/
+5) Sistema Estadual de Análise de Dados - SP (SEADE) = https://www.seade.gov.br/
 
 ```
 Sem Pacotes Disponiveis
