@@ -54,6 +54,7 @@ Quantitative (numerical attributes).
 - Pesquisa Mensal de Serviços (PMS)
 - Pesquisa Mensal de Comércio (PMC)
 - Pesquisa Industrial Mensal (PIM-PF)
+- Pesquisa Trimestral do Leite (PTL)
 - Levantamento Sistemático da Produção Agrícola (LSPA)
 - Pesquisa de Orçamentos Familiares (POF)
 
@@ -117,6 +118,22 @@ Python: Sem Pacote
 Sem Pacotes Disponiveis
 ```
 
+9) DATASUS (Ministério da Saúde) = https://datasus.saude.gov.br/
+
+```
+Pacotes Disponiveis
+R: (datasus)
+Python: (datasus)
+```
+
+10) AgroStat (Estatísticas Comércio Exterior do Agronegócio) = https://mapa-indicadores.agricultura.gov.br/publico/extensions/Agrostat/Agrostat.html
+
+```
+Pacotes Disponiveis
+R: (FAOstat)
+Python: (faostat)
+```
+
 #### National Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
@@ -130,8 +147,9 @@ Sem Pacotes Disponiveis
 
 ### Main Global Indicators Main
 - Conference Board Leading Economic Index
-- Índice de Desenvolvimento Humano (IDH)
-- Índice de Gini
+- Human Development Index (HDI)
+- Gini Index
+- Balance of Payment (BOP)
 
 ### Links for Datasets
 1) Organization for Economic Cooperation and Development (OCDE) = https://stats.oecd.org/
@@ -207,6 +225,13 @@ Python: (fredapi)
 ```
 No Packages Available
 ```
+
+11) Organização Pan-Americana da Saúde (OPAS) = https://www.paho.org/es/envejecimiento-saludable-datos-visualizaciones
+
+```
+No Packages Available
+```
+
 
 #### National Agencies
 - National Agricultural Library
