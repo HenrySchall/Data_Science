@@ -350,5 +350,12 @@ Python: (UNData)
 - The Cato Institute
 - Pew Research Center
 - American Enterprise Institute (AEI)
+- Chatham House
+- Institute of Economic Affairs (IEA)
+- Konrad-Adenauer-Stiftung (KAS)
+- European Economic Research Centre (ZEW)
+- European Policy Centre (EPC)
+- Centre for European Policy Studies (CEPS)
+- Bruegel
 
 
