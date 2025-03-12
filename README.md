@@ -262,13 +262,7 @@ Python: (fredapi)
 No Packages Available
 ```
 
-11) Organização Pan-Americana da Saúde (OPAS) = https://www.paho.org/es/envejecimiento-saludable-datos-visualizaciones
-
-```
-No Packages Available
-```
-
-12) London Stock Exchange Group (LSEG) - Antigo Eikon = lseg.com/en
+11) London Stock Exchange Group (LSEG) - Antigo Eikon = lseg.com/en
 
 ```
 Packages Available
@@ -276,7 +270,7 @@ R: (eikon)
 Python: (eikon)
 ```
 
-13) AgEcon Search = https://ageconsearch.umn.edu/
+12) AgEcon Search = https://ageconsearch.umn.edu/
 
 ```
 Packages Available
@@ -284,7 +278,7 @@ R: (agecon)
 Python: (agecon)
 ```
 
-14) International Institute for Applied Systems Analysis - AMPERE Research = https://iiasa.ac.at/models-tools-data/ampere
+13) International Institute for Applied Systems Analysis - AMPERE Research = https://iiasa.ac.at/models-tools-data/ampere
 
 ```
 Packages Available
@@ -292,7 +286,7 @@ R: (pyam)
 Python: (pyam)
 ```
 
-15) Europe Union - EUROSTAT = https://ec.europa.eu/eurostat/data/database
+14) Europe Union - EUROSTAT = https://ec.europa.eu/eurostat/data/database
 
 ```
 Packages Available
@@ -300,7 +294,7 @@ R: (eurostat)
 Python: (eurostatapiclient)
 ```
 
-16) Penn World Table = https://www.rug.nl/ggdc/productivity/pwt/
+15) Penn World Table = https://www.rug.nl/ggdc/productivity/pwt/
 
 ```
 Packages Available
@@ -308,7 +302,7 @@ R: (pwt)
 Python: (pwt)
 ```
 
-17) Organização Internacional do Trabalho = https://www.ilo.org/data-and-statistics
+16) Organização Internacional do Trabalho = https://www.ilo.org/data-and-statistics
 
 ```
 Packages Available
@@ -316,7 +310,7 @@ R: (oit)
 Python: (ilo)
 ```
 
-18) Organização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO) = https://databrowser.uis.unesco.org/
+17) Organização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO) = https://databrowser.uis.unesco.org/
 
 ```
 Packages Available
@@ -324,7 +318,7 @@ R: (unescodatar)
 Python: (UnescoData)
 ```
 
-19) Organização das Nações Unidas (ONU) = https://data.un.org/
+18) Organização das Nações Unidas (ONU) = https://data.un.org/
 
 ```
 Packages Available
