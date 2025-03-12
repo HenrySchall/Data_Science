@@ -90,7 +90,7 @@ Python: (ipeadatapy)
 
 ```
 Pacotes Disponiveis
-R: (sidrar) e (ribge)
+R:(sidrar) e (ribge)
 Python: (sidrapy) e (pyibge)
 ```
 
@@ -344,5 +344,11 @@ Python: (UNData)
 - United States Department of Labor (DOL)
 - United States Department of Education (ED)
 - Centers for Disease Control and Prevention (CDC)
+- Heritage Foundation
+- The Brookings Institution
+- Urban Institute
+- The Cato Institute
+- Pew Research Center
+- American Enterprise Institute (AEI)
 
 
