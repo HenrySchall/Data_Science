@@ -128,8 +128,8 @@ R: (datasus)
 Python: (datasus)
 ```
 
-10) AgroStat (Estatísticas Comércio Exterior do Agronegócio) = https://mapa-indicadores.agricultura.gov.br/publico/extensions/Agrostat/Agrostat.html
-
+10) AgroStat (Estatísticas Comércio Exterior do Agronegócio) = https://indicadores.agro.gov.br/
+    
 ```
 Pacotes Disponiveis
 R: (FAOstat)
@@ -155,6 +155,14 @@ Sem Pacotes Disponiveis
 Sem Pacotes Disponiveis
 ```
 
+14) Banco Nacional de Desenvolvimento (BNDES) = https://dadosabertos.bndes.gov.br/
+
+```   
+Pacotes Disponiveis
+R: (bndes)
+Python: Sem Pacotes
+```
+
 #### Research Agencies
 - Conab (Companhia Nacional de Abastecimento)
 - Fenabrave (Federação Nacional da Distribuição de Veículos Automotores)
@@ -166,10 +174,11 @@ Sem Pacotes Disponiveis
 - CEPEA (Centro de Estudos Avançados em Economia Aplicada)
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - ANS (Agencia Nacional de Saúde Suplementar)
+- Instituto Tecnológico da Aeronáutica (ITA)
 - DIEESE (Departamento Intersindical de Estatísticas e Estudos Socioeconômicos)
+- Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (ANBIMA)
 - Portal da Indústria (Confederação Nacional da Indústria)
 - Agência Nacional de Mineração
-
 
 ### Main Global Indicators
 - Conference Board Leading Economic Index
@@ -274,9 +283,46 @@ R: (agecon)
 Python: (agecon)
 ```
 
+14) International Institute for Applied Systems Analysis - AMPERE Research = https://iiasa.ac.at/models-tools-data/ampere
+
+```
+Packages Available
+R: (pyam)
+Python: (pyam)
+```
+
+15) Europe Union - EUROSTAT = https://ec.europa.eu/eurostat/data/database
+
+```
+Packages Available
+R: (eurostat)
+Python: (eurostatapiclient)
+```
+
+16) Penn World Table = https://www.rug.nl/ggdc/productivity/pwt/
+
+```
+Packages Available
+R: (pwt)
+Python: (pwt)
+```
+
+
 #### Research Agencies
 - National Agricultural Library
 - AGRIS (International System for Agricultural Science and Technology)
 - U.S. Department of Agriculture (USDA)
+- Environmental Protection Agency (EPA)
+- Federal Reserve (Fed)
+- Social Security Administration (SSA)
+- National Institutes of Health (NIH)
+- United States Securities and Exchange Commission (SEC)
+- United States Department of Labor (DOL)
+- United States Department of Education (ED)
+- Centers for Disease Control and Prevention (CDC)
 
-https://www18.fgv.br/corp/estantebasesdedados/biblioteca/estante
+- IPEF
+- Organização Internacional do Trabalho (International Labour Organization)
+- INT - Instituto Nacional de Tecnologia. Repositório Institucional
+- UNESCO
+- ONU
