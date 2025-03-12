@@ -175,6 +175,7 @@ Python: Sem Pacotes
 - CNA (Confederação da Agricultura e Pecuária do Brasil)
 - ANS (Agencia Nacional de Saúde Suplementar)
 - Instituto Tecnológico da Aeronáutica (ITA)
+- Instituto de Pesquisas e Estudos Florestais (IPEF)
 - DIEESE (Departamento Intersindical de Estatísticas e Estudos Socioeconômicos)
 - Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (ANBIMA)
 - Portal da Indústria (Confederação Nacional da Indústria)
@@ -307,6 +308,29 @@ R: (pwt)
 Python: (pwt)
 ```
 
+17) Organização Internacional do Trabalho = https://www.ilo.org/data-and-statistics
+
+```
+Packages Available
+R: (oit)
+Python: (ilo)
+```
+
+18) Organização das Nações Unidas para a Educação, a Ciência e a Cultura (UNESCO) = https://databrowser.uis.unesco.org/
+
+```
+Packages Available
+R: (unescodatar)
+Python: (UnescoData)
+```
+
+19) Organização das Nações Unidas (ONU) = https://data.un.org/
+
+```
+Packages Available
+R: (UNData)
+Python: (UNData)
+```
 
 #### Research Agencies
 - National Agricultural Library
@@ -321,8 +345,4 @@ Python: (pwt)
 - United States Department of Education (ED)
 - Centers for Disease Control and Prevention (CDC)
 
-- IPEF
-- Organização Internacional do Trabalho (International Labour Organization)
-- INT - Instituto Nacional de Tecnologia. Repositório Institucional
-- UNESCO
-- ONU
+
