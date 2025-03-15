@@ -1,0 +1,7 @@
+if(!require(magrittr)){install.packages("magrittr")}
+
+################################################################
+### If it doesn't work remove the packages and install again ###
+################################################################
+
+remove.packages("dplyr")
