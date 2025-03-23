@@ -180,6 +180,7 @@ Python: Sem Pacotes
 - Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (ANBIMA)
 - Portal da Indústria (Confederação Nacional da Indústria)
 - Agência Nacional de Mineração
+- https://www.fipe.org.br/pt-br/home
 
 ### Main Global Indicators
 - Conference Board Leading Economic Index
