@@ -352,5 +352,6 @@ Python: (UNData)
 - European Policy Centre (EPC)
 - Centre for European Policy Studies (CEPS)
 - Bruegel
+- https://www.v-dem.net/
 
 
